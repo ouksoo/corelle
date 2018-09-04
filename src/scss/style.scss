@@ -25,11 +25,29 @@ header {
             float:left;
             font-family: 'Montserrat', serif; font-weight: 600; font-size: 14px;
             a {
+                position: relative;
                 display: inline-block;
                 line-height: 28px;
                 width: 160px; text-align: center;
                 color: #000;
                 border-left: 1px solid #898989;
+                &::after {
+                    content: ' ';
+                    position: absolute;
+                    width: 0px; height: 2px;
+                    background: #000;                    
+                    left: 50%; bottom: -3px;
+                    margin-left: 0px;
+                    transition: width 1s, margin-left 1s;
+                }
+                &.on::after {
+                    content: ' ';
+                    position: absolute;
+                    width: 70px; height: 2px;
+                    background: #000;                    
+                    left: 50%; bottom: -3px;
+                    margin-left: -35px;
+                }
             }
             &:last-child a {
                 border-right: 1px solid #898989;
@@ -39,10 +57,16 @@ header {
             position: absolute;
             right: 0; top: 35px;
             width: 164px; height: 31px;
+            padding-top: 6px; text-align: center;
             border: solid 1px #dbdbdb;
             border-radius: 15px;
             color: #000;
             font-size: 12px; font-family: 'Montserrat', serif; font-weight: 600;
+
+            span {
+                font-family: 'NanumBrunGothic', serif;
+                font-weight: 700;
+            }
         }
     }
 }
@@ -62,16 +86,22 @@ footer {
             position: absolute;
             right: 0; top: 35px;
             width: 164px; height: 31px;
+            padding-top: 6px; text-align: center;
             border: solid 1px #dbdbdb;
             border-radius: 15px;
             color: #000;
             font-size: 12px; font-family: 'Montserrat', serif; font-weight: 600;
+
+            span {
+                font-family: 'NanumBrunGothic', serif;
+                font-weight: 700;
+            }
         }
         ul {
             float: left;
             width: 160px;
             li {
-                padding: 4px 0;
+                padding: 3px 0;
                 &.f {
                     font-family: 'Montserrat', serif; font-weight: 600; font-size: 15px; color: #000;
                     padding-bottom: 20px;

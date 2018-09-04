@@ -147,6 +147,13 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'NanumBrunGothic';
+  src: url("../img/font/NanumBarunGothic.eot");
+  src: url("../img/font/NanumBarunGothic.eot?#iefix") format("embedded-opentype"), url("../img/font/NanumBarunGothic.woff2") format("woff2"), url("../img/font/NanumBarunGothic.woff") format("woff"), url("../img/font/NanumBarunGothic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 /********************** 
 * layout
 ***********************/
@@ -178,12 +185,32 @@ header {
       font-weight: 600;
       font-size: 14px; }
       header nav li a {
+        position: relative;
         display: inline-block;
         line-height: 28px;
         width: 160px;
         text-align: center;
         color: #000;
         border-left: 1px solid #898989; }
+        header nav li a::after {
+          content: ' ';
+          position: absolute;
+          width: 0px;
+          height: 2px;
+          background: #000;
+          left: 50%;
+          bottom: -3px;
+          margin-left: 0px;
+          transition: width 1s, margin-left 1s; }
+        header nav li a.on::after {
+          content: ' ';
+          position: absolute;
+          width: 70px;
+          height: 2px;
+          background: #000;
+          left: 50%;
+          bottom: -3px;
+          margin-left: -35px; }
       header nav li:last-child a {
         border-right: 1px solid #898989; }
     header nav > a {
@@ -192,12 +219,17 @@ header {
       top: 35px;
       width: 164px;
       height: 31px;
+      padding-top: 6px;
+      text-align: center;
       border: solid 1px #dbdbdb;
       border-radius: 15px;
       color: #000;
       font-size: 12px;
       font-family: 'Montserrat', serif;
       font-weight: 600; }
+      header nav > a span {
+        font-family: 'NanumBrunGothic', serif;
+        font-weight: 700; }
 
 /********************** 
 * footer
@@ -215,17 +247,22 @@ footer {
       top: 35px;
       width: 164px;
       height: 31px;
+      padding-top: 6px;
+      text-align: center;
       border: solid 1px #dbdbdb;
       border-radius: 15px;
       color: #000;
       font-size: 12px;
       font-family: 'Montserrat', serif;
       font-weight: 600; }
+      footer .sitemap > a span {
+        font-family: 'NanumBrunGothic', serif;
+        font-weight: 700; }
     footer .sitemap ul {
       float: left;
       width: 160px; }
       footer .sitemap ul li {
-        padding: 4px 0; }
+        padding: 3px 0; }
         footer .sitemap ul li.f {
           font-family: 'Montserrat', serif;
           font-weight: 600;

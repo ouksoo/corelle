@@ -2,7 +2,11 @@
 
 var CORE = {
     init: function init() {
-        console.log('init');
+        this.topMenuIndicator();
+    },
+    // GNB indicator
+    topMenuIndicator: function topMenuIndicator() {
+        $('nav a.here').addClass('on');
     }
 
     // apply AOS plugin
@@ -11,4 +15,7 @@ var CORE = {
     duration: 1000
 });
 
-CORE.init();
+// after loaded execute
+window.onload = function () {
+    CORE.init();
+};
