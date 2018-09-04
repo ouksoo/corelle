@@ -1,0 +1,354 @@
+/* ***************  global *************** */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'NotoSansCJKkr', serif; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  display: inline-block; }
+
+/*  ie-mac \*/
+*html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+/* ie-mac */
+/* *********** other ********** */
+.effect {
+  background-color: #000;
+  filter: Alpha(opacity=35);
+  opacity: 0.3;
+  -moz-opacity: 0.3; }
+
+summary {
+  display: none; }
+
+/* link */
+a:link {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
+a:active {
+  text-decoration: none; }
+
+/* image */
+img {
+  border: 0;
+  vertical-align: top; }
+
+/* define */
+dl, dt, dd {
+  margin: 0px;
+  padding: 0px; }
+
+/* sentence */
+div, h2 {
+  padding: 0;
+  margin: 0; }
+
+p {
+  margin: 0px;
+  padding: 0px; }
+
+/* list */
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px; }
+
+ol {
+  padding-left: 24px; }
+
+/* area */
+hr {
+  display: none; }
+
+/* form */
+form {
+  margin: 0;
+  padding: 0; }
+
+form label, label {
+  height: 19px;
+  color: #5E5E5E;
+  cursor: default;
+  font-size: 100%; }
+
+select {
+  font-size: 100%;
+  background: #fff;
+  vertical-align: middle;
+  height: 20px;
+  letter-spacing: 0px; }
+
+legend {
+  display: none; }
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+/* table */
+table {
+  margin: 0px;
+  padding: 0px;
+  border-spacing: 0; }
+
+td {
+  margin: 0px;
+  padding: 0px;
+  font-size: 100%;
+  color: #777777; }
+
+.notable {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+  border: 0 solid; }
+
+th {
+  font-weight: normal; }
+
+/* h */
+h1, h2, h3, h4, h5, h6, h7 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+strong, b {
+  font-weight: normal; }
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+@font-face {
+  font-family: 'NotoSansCJKkr';
+  src: url("../img/font/notokr-regular.eot");
+  src: url("../img/font/notokr-regular.eot?#iefix") format("embedded-opentype"), url("../img/font/notokr-regular.woff2") format("woff2"), url("../img/font/notokr-regular.woff") format("woff"), url("../img/font/notokr-regular.ttf") format("truetype"), url("../img/font/notokr-regular.svg#notokr-regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/********************** 
+* layout
+***********************/
+div.wrapper {
+  width: 1680px;
+  margin: 0 auto; }
+
+/********************** 
+* header
+***********************/
+header {
+  position: relative;
+  height: 94px;
+  border-bottom: 1px solid #e5e5e5; }
+  header h1 {
+    position: absolute;
+    width: 87px;
+    height: 40px;
+    background: url("../img/logo.png") 0 0 no-repeat;
+    left: 50px;
+    top: 28px;
+    text-indent: -9999px; }
+  header nav {
+    float: right;
+    margin: 35px 220px 0 0; }
+    header nav li {
+      float: left;
+      font-family: 'Montserrat', serif;
+      font-weight: 600;
+      font-size: 14px; }
+      header nav li a {
+        display: inline-block;
+        line-height: 28px;
+        width: 160px;
+        text-align: center;
+        color: #000;
+        border-left: 1px solid #898989; }
+      header nav li:last-child a {
+        border-right: 1px solid #898989; }
+    header nav > a {
+      position: absolute;
+      right: 0;
+      top: 35px;
+      width: 164px;
+      height: 31px;
+      border: solid 1px #dbdbdb;
+      border-radius: 15px;
+      color: #000;
+      font-size: 12px;
+      font-family: 'Montserrat', serif;
+      font-weight: 600; }
+
+/********************** 
+* footer
+***********************/
+footer {
+  height: 450px;
+  border-top: 1px solid #dedede; }
+  footer .sitemap {
+    position: relative;
+    height: 313px;
+    padding: 20px 50px 0 50px; }
+    footer .sitemap > a {
+      position: absolute;
+      right: 0;
+      top: 35px;
+      width: 164px;
+      height: 31px;
+      border: solid 1px #dbdbdb;
+      border-radius: 15px;
+      color: #000;
+      font-size: 12px;
+      font-family: 'Montserrat', serif;
+      font-weight: 600; }
+    footer .sitemap ul {
+      float: left;
+      width: 160px; }
+      footer .sitemap ul li {
+        padding: 4px 0; }
+        footer .sitemap ul li.f {
+          font-family: 'Montserrat', serif;
+          font-weight: 600;
+          font-size: 15px;
+          color: #000;
+          padding-bottom: 20px; }
+        footer .sitemap ul li a {
+          font-size: 14px;
+          color: #555; }
+      footer .sitemap ul.brands a {
+        font-family: 'Montserrat', serif; }
+      footer .sitemap ul.brands span.line {
+        display: block;
+        height: 1px;
+        width: 20px;
+        background: #d7d7d7; }
+  footer .copyright {
+    position: relative;
+    height: 137px;
+    background: #0a3f54;
+    font-size: 12px;
+    padding: 30px 0 0 180px;
+    line-height: 20px; }
+    footer .copyright h2 {
+      position: absolute;
+      width: 87px;
+      height: 40px;
+      background: url("../img/logo.png") 0 0 no-repeat;
+      left: 50px;
+      top: 28px;
+      text-indent: -9999px; }
+    footer .copyright div.menus {
+      float: left;
+      width: 345px; }
+      footer .copyright div.menus a {
+        display: inline-block;
+        line-height: 13px; }
+        footer .copyright div.menus a:nth-child(1) {
+          padding-right: 15px; }
+        footer .copyright div.menus a:nth-child(2) {
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+          padding: 0 15px; }
+        footer .copyright div.menus a:nth-child(3) {
+          padding-left: 15px; }
+    footer .copyright div.phone-time {
+      float: left;
+      width: 260px; }
+    footer .copyright div.address {
+      float: left;
+      width: 430px; }
+    footer .copyright a, footer .copyright p {
+      color: #ccc; }
+    footer .copyright .f {
+      font-family: 'Montserrat', serif; }
+    footer .copyright ul.sns {
+      position: absolute;
+      right: 37px;
+      top: 25px; }
+      footer .copyright ul.sns li {
+        float: left; }
+        footer .copyright ul.sns li a {
+          display: inline-block;
+          width: 36px;
+          height: 36px;
+          text-indent: -9999px;
+          margin-left: 20px; }
+          footer .copyright ul.sns li a.facebook {
+            background: url("../img/facebook.png") 50% 50% no-repeat; }
+          footer .copyright ul.sns li a.insta {
+            background: url("../img/instagram.png") 50% 50% no-repeat; }
+          footer .copyright ul.sns li a.youtube {
+            background: url("../img/youtube.png") 50% 50% no-repeat; }
+
+/********************** 
+* globals
+***********************/
+input[type="radio"].default {
+  display: none; }
+
+input[type="radio"].default + label span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 17px;
+  height: 17px;
+  background: url("../img/radio_uncheck.png") 50% 50% no-repeat;
+  background-size: 17px auto;
+  margin-right: 1px;
+  cursor: pointer; }
+
+input[type="radio"].default:checked + label span {
+  background: url("../img/radio_check.png") 50% 50% no-repeat;
+  background-size: 17px auto; }
+
+input[type="checkbox"].default {
+  display: none; }
+
+input[type="checkbox"].default + label span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/checkbox_off.png") 50% 50% no-repeat;
+  cursor: pointer; }
+
+input[type="checkbox"].default:checked + label span {
+  background: url("../img/checkbox_on.png") 50% 50% no-repeat; }
+
+.corelle-about {
+  border: 1px solid blue; }
+
+.corelle-brand {
+  border: 1px solid blue; }
+
+.corelle-news {
+  border: 1px solid green; }
+
+.corelle-product {
+  border: 1px solid blue; }
+
+.corelle-support {
+  border: 1px solid blue; }
+
+.corelle-webzine {
+  border: 1px solid blue; }

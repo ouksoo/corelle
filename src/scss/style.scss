@@ -1,0 +1,200 @@
+/********************** 
+* layout
+***********************/
+div.wrapper {
+    width: 1680px; 
+    margin: 0 auto;
+}
+
+/********************** 
+* header
+***********************/
+header {
+    position: relative; height: 94px; border-bottom: 1px solid #e5e5e5;
+    h1 {
+        position: absolute;
+        width: 87px; height: 40px;
+        background:url('../img/logo.png') 0 0 no-repeat;
+        left: 50px; top: 28px;
+        text-indent: -9999px;
+    }   
+    nav {
+        float: right;
+        margin: 35px 220px 0 0;
+        li {
+            float:left;
+            font-family: 'Montserrat', serif; font-weight: 600; font-size: 14px;
+            a {
+                display: inline-block;
+                line-height: 28px;
+                width: 160px; text-align: center;
+                color: #000;
+                border-left: 1px solid #898989;
+            }
+            &:last-child a {
+                border-right: 1px solid #898989;
+            }
+        }
+        & > a {
+            position: absolute;
+            right: 0; top: 35px;
+            width: 164px; height: 31px;
+            border: solid 1px #dbdbdb;
+            border-radius: 15px;
+            color: #000;
+            font-size: 12px; font-family: 'Montserrat', serif; font-weight: 600;
+        }
+    }
+}
+
+/********************** 
+* footer
+***********************/
+footer {
+    height: 450px;
+    border-top: 1px solid #dedede;
+
+    .sitemap {
+        position: relative;
+        height: 313px;
+        padding: 20px 50px 0 50px;
+        & > a {
+            position: absolute;
+            right: 0; top: 35px;
+            width: 164px; height: 31px;
+            border: solid 1px #dbdbdb;
+            border-radius: 15px;
+            color: #000;
+            font-size: 12px; font-family: 'Montserrat', serif; font-weight: 600;
+        }
+        ul {
+            float: left;
+            width: 160px;
+            li {
+                padding: 4px 0;
+                &.f {
+                    font-family: 'Montserrat', serif; font-weight: 600; font-size: 15px; color: #000;
+                    padding-bottom: 20px;
+                }
+                a {
+                    font-size: 14px; color: #555;
+                }
+            }
+            &.brands {
+                a {
+                    font-family: 'Montserrat', serif;
+                }
+                span.line {
+                    display:block; height: 1px; width: 20px; background: #d7d7d7;
+                }
+            } 
+        }
+    }
+    .copyright {
+        position: relative;
+        height: 137px;
+        background: #0a3f54;
+        font-size: 12px;
+        padding: 30px 0 0 180px;
+        line-height: 20px;
+        h2 {
+            position: absolute;
+            width: 87px; height: 40px;
+            background:url('../img/logo.png') 0 0 no-repeat;
+            left: 50px; top: 28px;
+            text-indent: -9999px;
+        } 
+        div.menus {
+            float: left;
+            width: 345px;
+            a {
+                display: inline-block;
+                line-height: 13px;
+                &:nth-child(1) {
+                    padding-right: 15px;
+                }
+                &:nth-child(2) {
+                    border-left: 1px solid #ccc;
+                    border-right: 1px solid #ccc;
+                    padding: 0 15px;
+                }
+                &:nth-child(3) {
+                    padding-left: 15px;
+                }
+            }
+        }
+        div.phone-time {
+            float: left;
+            width: 260px;
+        }
+        div.address {
+            float: left;
+            width: 430px;
+        }
+        a, p {
+            color: #ccc;
+        }
+        .f {font-family: 'Montserrat', serif;}
+        ul.sns {
+            position: absolute;
+            right: 37px; top: 25px;
+            li {
+                float: left;
+                a {
+                    display: inline-block;
+                    width: 36px; height: 36px;
+                    text-indent: -9999px;
+                    margin-left: 20px;
+                    &.facebook {
+                        background: url('../img/facebook.png') 50% 50% no-repeat;
+                    }
+                    &.insta {
+                        background: url('../img/instagram.png') 50% 50% no-repeat;
+                    }
+                    &.youtube {
+                        background: url('../img/youtube.png') 50% 50% no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/********************** 
+* globals
+***********************/
+//input radio
+input[type="radio"].default {
+    display: none;
+}
+input[type="radio"].default + label span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 17px;
+    background: url('../img/radio_uncheck.png') 50% 50% no-repeat;
+    background-size: 17px auto;
+    margin-right: 1px;
+    cursor: pointer;
+}
+input[type="radio"].default:checked + label span {
+    background: url('../img/radio_check.png') 50% 50% no-repeat;
+    background-size: 17px auto;
+}
+
+//checkbox
+input[type="checkbox"].default {
+    display: none;
+}
+input[type="checkbox"].default + label span {
+    display: inline-block;
+    vertical-align: middle; margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    background: url('../img/checkbox_off.png') 50% 50% no-repeat;
+    cursor: pointer;
+}
+input[type="checkbox"].default:checked + label span {
+    background: url('../img/checkbox_on.png') 50% 50% no-repeat;
+}
