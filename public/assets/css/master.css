@@ -7,7 +7,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'NotoSansCJKkr', serif; }
+  font-family: 'NotoSansCJKkr', serif;
+  color: #333; }
 
 .clearfix:after {
   content: ".";
@@ -168,13 +169,29 @@ div.wrapper {
       text-align: center;
       border-bottom: 1px solid #636363; }
       div.wrapper section div.main-title h2 {
-        padding: 75px 0 20px 0;
+        padding: 75px 0 26px 0;
         font-family: 'Playfair Display', serif;
         font-size: 60px;
         color: #000; }
       div.wrapper section div.main-title p.slogan {
         font-size: 22px;
         color: #555; }
+    div.wrapper section div.content {
+      padding: 0 0 90px 0; }
+
+table.notable.normal th {
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+  text-align: left;
+  padding: 24px 0 20px 0;
+  vertical-align: top;
+  line-height: 24px; }
+
+table.notable.normal td {
+  padding: 10px 0; }
+  table.notable.normal td.radio {
+    height: 70px; }
 
 /********************** 
 * header
@@ -363,22 +380,38 @@ footer {
 /********************** 
 * globals
 ***********************/
+input[type="text"].normal {
+  border: 1px solid #cacaca;
+  font-size: 16px;
+  color: #333;
+  padding: 13px 20px; }
+
+textarea.normal {
+  border: 1px solid #cacaca;
+  font-size: 16px;
+  color: #333;
+  padding: 10px 20px; }
+
 input[type="radio"].default {
   display: none; }
 
+input[type="radio"].default + label {
+  margin-right: 25px; }
+
 input[type="radio"].default + label span {
   display: inline-block;
-  vertical-align: middle;
-  width: 17px;
-  height: 17px;
-  background: url("../img/radio_uncheck.png") 50% 50% no-repeat;
-  background-size: 17px auto;
+  vertical-align: bottom;
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon_radio_off.png") 50% 50% no-repeat;
+  background-size: 24px auto;
   margin-right: 1px;
+  line-height: 20px;
   cursor: pointer; }
 
 input[type="radio"].default:checked + label span {
-  background: url("../img/radio_check.png") 50% 50% no-repeat;
-  background-size: 17px auto; }
+  background: url("../img/icon_radio_on.png") 50% 50% no-repeat;
+  background-size: 24px auto; }
 
 input[type="checkbox"].default {
   display: none; }
@@ -387,13 +420,345 @@ input[type="checkbox"].default + label span {
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px;
-  width: 20px;
-  height: 20px;
-  background: url("../img/checkbox_off.png") 50% 50% no-repeat;
+  width: 21px;
+  height: 21px;
+  background: url("../img/icon_checkbox_off.png") 50% 50% no-repeat;
   cursor: pointer; }
 
 input[type="checkbox"].default:checked + label span {
-  background: url("../img/checkbox_on.png") 50% 50% no-repeat; }
+  background: url("../img/icon_checkbox_on.png") 50% 50% no-repeat; }
+
+/********************** 
+* btn setting
+***********************/
+div.btn-area {
+  text-align: center; }
+  div.btn-area a {
+    vertical-align: top; }
+
+a.btn-default {
+  display: inline-block;
+  font-size: 18px;
+  color: #333;
+  width: 324px;
+  height: 47px;
+  border: 1px solid #cacaca;
+  text-align: center;
+  padding-top: 12px;
+  margin: 0 5px; }
+
+a.btn-default.on {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  width: 324px;
+  height: 47px;
+  border: 0px;
+  background: #333;
+  text-align: center; }
+
+
+/********************** 
+* layout
+***********************/
+div.wrapper {
+  width: 1680px;
+  margin: 0 auto; }
+  div.wrapper section {
+    width: 1080px;
+    margin: 0 auto; }
+    div.wrapper section div.main-title {
+      height: 293px;
+      text-align: center;
+      border-bottom: 1px solid #636363; }
+      div.wrapper section div.main-title h2 {
+        padding: 75px 0 26px 0;
+        font-family: 'Playfair Display', serif;
+        font-size: 60px;
+        color: #000; }
+      div.wrapper section div.main-title p.slogan {
+        font-size: 22px;
+        color: #555; }
+    div.wrapper section div.content {
+      padding: 0 0 90px 0; }
+
+table.notable.normal th {
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+  text-align: left;
+  padding: 24px 0 20px 0;
+  vertical-align: top;
+  line-height: 24px; }
+
+table.notable.normal td {
+  padding: 10px 0; }
+  table.notable.normal td.radio {
+    height: 70px; }
+
+/********************** 
+* header
+***********************/
+header {
+  position: relative;
+  height: 94px;
+  border-bottom: 1px solid #e5e5e5; }
+  header h1 {
+    position: absolute;
+    width: 87px;
+    height: 40px;
+    background: url("../img/logo.png") 0 0 no-repeat;
+    left: 50px;
+    top: 28px;
+    text-indent: -9999px; }
+  header nav {
+    float: right;
+    margin: 35px 220px 0 0; }
+    header nav li {
+      float: left;
+      font-family: 'Montserrat', serif;
+      font-weight: 600;
+      font-size: 14px; }
+      header nav li a {
+        position: relative;
+        display: inline-block;
+        line-height: 28px;
+        width: 160px;
+        text-align: center;
+        color: #000;
+        border-left: 1px solid #898989; }
+        header nav li a::after {
+          content: ' ';
+          position: absolute;
+          width: 0px;
+          height: 2px;
+          background: #000;
+          left: 50%;
+          bottom: -3px;
+          margin-left: 0px;
+          transition: width 1s, margin-left 1s; }
+        header nav li a.on::after {
+          content: ' ';
+          position: absolute;
+          width: 70px;
+          height: 2px;
+          background: #000;
+          left: 50%;
+          bottom: -3px;
+          margin-left: -35px; }
+      header nav li:last-child a {
+        border-right: 1px solid #898989; }
+    header nav > a {
+      position: absolute;
+      right: 0;
+      top: 35px;
+      width: 164px;
+      height: 31px;
+      padding-top: 7px;
+      padding-right: 20px;
+      text-align: center;
+      border: solid 1px #dbdbdb;
+      border-radius: 15px;
+      color: #000;
+      font-size: 12px;
+      font-family: 'Montserrat', serif;
+      font-weight: 600;
+      background: url("../img/icon_shop_arrow.png") 140px 50% no-repeat; }
+      header nav > a span {
+        font-family: 'NanumBrunGothic', serif;
+        font-weight: 700; }
+
+/********************** 
+* footer
+***********************/
+footer {
+  height: 450px;
+  border-top: 1px solid #dedede; }
+  footer .sitemap {
+    position: relative;
+    height: 313px;
+    padding: 20px 50px 0 50px; }
+    footer .sitemap > a {
+      position: absolute;
+      right: 0;
+      top: 35px;
+      width: 164px;
+      height: 31px;
+      padding-top: 7px;
+      padding-right: 20px;
+      text-align: center;
+      border: solid 1px #dbdbdb;
+      border-radius: 15px;
+      color: #000;
+      font-size: 12px;
+      font-family: 'Montserrat', serif;
+      font-weight: 600;
+      background: url("../img/icon_shop_arrow.png") 140px 50% no-repeat; }
+      footer .sitemap > a span {
+        font-family: 'NanumBrunGothic', serif;
+        font-weight: 700; }
+    footer .sitemap ul {
+      float: left;
+      width: 160px; }
+      footer .sitemap ul li {
+        padding: 3px 0; }
+        footer .sitemap ul li.f {
+          font-family: 'Montserrat', serif;
+          font-weight: 600;
+          font-size: 15px;
+          color: #000;
+          padding-bottom: 20px; }
+        footer .sitemap ul li a {
+          font-size: 14px;
+          color: #555; }
+      footer .sitemap ul.brands a {
+        font-family: 'Montserrat', serif; }
+      footer .sitemap ul.brands span.line {
+        display: block;
+        height: 1px;
+        width: 20px;
+        background: #d7d7d7; }
+      footer .sitemap ul.webzine li.s a {
+        display: inline-block;
+        padding-right: 12px;
+        background: url("../img/copyright-arrow.png") right 50% no-repeat; }
+  footer .copyright {
+    position: relative;
+    height: 137px;
+    background: #0a3f54;
+    font-size: 12px;
+    padding: 30px 0 0 180px;
+    line-height: 20px; }
+    footer .copyright h2 {
+      position: absolute;
+      width: 87px;
+      height: 40px;
+      background: url("../img/bottom_logo.png") 0 0 no-repeat;
+      left: 50px;
+      top: 28px;
+      text-indent: -9999px; }
+    footer .copyright div.menus {
+      float: left;
+      width: 345px; }
+      footer .copyright div.menus a {
+        display: inline-block;
+        line-height: 13px; }
+        footer .copyright div.menus a:nth-child(1) {
+          padding-right: 15px; }
+        footer .copyright div.menus a:nth-child(2) {
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+          padding: 0 15px; }
+        footer .copyright div.menus a:nth-child(3) {
+          padding-left: 15px; }
+    footer .copyright div.phone-time {
+      float: left;
+      width: 260px; }
+    footer .copyright div.address {
+      float: left;
+      width: 430px; }
+    footer .copyright a, footer .copyright p {
+      color: #ccc; }
+    footer .copyright .f {
+      font-family: 'Montserrat', serif; }
+    footer .copyright ul.sns {
+      position: absolute;
+      right: 37px;
+      top: 25px; }
+      footer .copyright ul.sns li {
+        float: left; }
+        footer .copyright ul.sns li a {
+          display: inline-block;
+          width: 36px;
+          height: 36px;
+          text-indent: -9999px;
+          margin-left: 20px; }
+          footer .copyright ul.sns li a.facebook {
+            background: url("../img/facebook.png") 50% 50% no-repeat; }
+          footer .copyright ul.sns li a.insta {
+            background: url("../img/instagram.png") 50% 50% no-repeat; }
+          footer .copyright ul.sns li a.youtube {
+            background: url("../img/youtube.png") 50% 50% no-repeat; }
+
+/********************** 
+* globals
+***********************/
+input[type="text"].normal {
+  border: 1px solid #cacaca;
+  font-size: 16px;
+  color: #333;
+  padding: 13px 20px; }
+
+textarea.normal {
+  border: 1px solid #cacaca;
+  font-size: 16px;
+  color: #333;
+  padding: 10px 20px; }
+
+input[type="radio"].default {
+  display: none; }
+
+input[type="radio"].default + label {
+  margin-right: 25px; }
+
+input[type="radio"].default + label span {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon_radio_off.png") 50% 50% no-repeat;
+  background-size: 24px auto;
+  margin-right: 1px;
+  line-height: 20px;
+  cursor: pointer; }
+
+input[type="radio"].default:checked + label span {
+  background: url("../img/icon_radio_on.png") 50% 50% no-repeat;
+  background-size: 24px auto; }
+
+input[type="checkbox"].default {
+  display: none; }
+
+input[type="checkbox"].default + label span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 21px;
+  height: 21px;
+  background: url("../img/icon_checkbox_off.png") 50% 50% no-repeat;
+  cursor: pointer; }
+
+input[type="checkbox"].default:checked + label span {
+  background: url("../img/icon_checkbox_on.png") 50% 50% no-repeat; }
+
+/********************** 
+* btn setting
+***********************/
+div.btn-area {
+  text-align: center; }
+  div.btn-area a {
+    vertical-align: top; }
+
+a.btn-default {
+  display: inline-block;
+  font-size: 18px;
+  color: #333;
+  width: 324px;
+  height: 47px;
+  border: 1px solid #cacaca;
+  text-align: center;
+  padding-top: 12px;
+  margin: 0 5px; }
+
+a.btn-default.on {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  width: 324px;
+  height: 47px;
+  border: 0px;
+  background: #333;
+  text-align: center; }
 
 .corelle-about {
   border: 1px solid blue; }
@@ -401,14 +766,91 @@ input[type="checkbox"].default:checked + label span {
 .corelle-brand {
   border: 1px solid blue; }
 
-.corelle-news {
-  border: 1px solid green; }
+.corelle-news.news div.tabsets {
+  padding: 32px 0 42px 0;
+  text-align: center; }
+  .corelle-news.news div.tabsets a {
+    display: inline-block;
+    margin: 0 37px;
+    font-size: 20px;
+    color: #888; }
+    .corelle-news.news div.tabsets a.on {
+      color: #000; }
+
+.corelle-news.news ul li {
+  float: left;
+  width: 522px;
+  margin-right: 36px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #cacaca; }
+  .corelle-news.news ul li p.subject {
+    font-size: 18px;
+    color: #333;
+    line-height: 26px;
+    padding: 20px 0;
+    height: 90px;
+    overflow: hidden; }
+  .corelle-news.news ul li p.date {
+    font-size: 14px;
+    color: #888;
+    padding-bottom: 20px; }
+    .corelle-news.news ul li p.date span {
+      display: inline-block;
+      margin-left: 12px; }
+  .corelle-news.news ul li:nth-child(even) {
+    margin-right: 0; }
+
+.corelle-news.news .btn-area a.arrow-down {
+  background: url("../img/icon_more_arrow.png") 200px 50% no-repeat; }
+
+.corelle-news.news .container p.subject {
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+  padding: 30px 0 15px 0; }
+
+.corelle-news.news .container p.date {
+  text-align: center;
+  font-size: 22px;
+  color: #888;
+  padding: 0px 0 30px 0; }
+
+.corelle-news.news .prev-next {
+  border-top: 2px solid #cacaca;
+  margin: 100px 0 24px 0; }
+  .corelle-news.news .prev-next th {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    border-bottom: 2px solid #cacaca;
+    padding: 25px 0; }
+  .corelle-news.news .prev-next td {
+    font-size: 16px;
+    color: #333;
+    border-bottom: 2px solid #cacaca; }
+    .corelle-news.news .prev-next td a {
+      color: #333; }
+    .corelle-news.news .prev-next td.date {
+      color: #888;
+      text-align: right;
+      padding-right: 20px; }
 
 .corelle-product {
   border: 1px solid blue; }
 
-.corelle-support {
-  border: 1px solid blue; }
+.corelle-support.asking {
+  padding-top: 50px; }
+  .corelle-support.asking div.personal-agree {
+    border: 1px solid #cacaca;
+    padding: 25px 50px;
+    line-height: 24px;
+    font-size: 16px; }
+  .corelle-support.asking td input[type="file"] {
+    display: block;
+    font-size: 16px;
+    margin: 15px 0; }
+  .corelle-support.asking p.agreement {
+    padding: 15px 0 70px 0; }
 
 .corelle-webzine {
   border: 1px solid blue; }
