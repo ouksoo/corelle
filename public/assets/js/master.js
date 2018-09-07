@@ -1,12 +1,36 @@
 'use strict';
 
 var CORE = {
+    appSet: {
+        'gnbActive': false
+    },
     init: function init() {
         this.topMenuIndicator();
+        this.naviMouseEvent();
     },
-    // GNB indicator
+    // GNB indicator init
     topMenuIndicator: function topMenuIndicator() {
         $('nav a.here').addClass('on');
+        $('h1').on('click', function () {
+            window.location.href = '/';
+        });
+    },
+    // GNB indicator operate
+    naviMouseEvent: function naviMouseEvent() {
+        $('nav a').on('mouseenter', function () {
+            $('nav a').each(function () {
+                $(this).removeClass('on');
+            });
+            $(this).addClass('on');
+            CORE.appSet.gnbActive = true;
+        });
+        $('nav a').on('mouseleave', function () {
+            $(this).removeClass('on');
+            CORE.appSet.gnbActive = false;
+            if (!CORE.appSet.gnbActive) {
+                $('nav a.here').addClass('on');
+            }
+        });
     }
 
     // apply AOS plugin

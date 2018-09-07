@@ -2,7 +2,8 @@
 * layout
 ***********************/
 div.wrapper {
-    width: 1680px; 
+    max-width: 1680px; 
+    min-width: 1500px; 
     margin: 0 auto;
 
     section {
@@ -59,6 +60,7 @@ header {
         background:url('../img/logo.png') 0 0 no-repeat;
         left: 50px; top: 28px;
         text-indent: -9999px;
+        cursor: pointer;
     }   
     nav {
         float: right;
@@ -80,7 +82,8 @@ header {
                     background: #000;                    
                     left: 50%; bottom: -3px;
                     margin-left: 0px;
-                    transition: width 1s, margin-left 1s;
+                    -webkit-transition: width .5s, margin-left .5s;
+                            transition: width .5s, margin-left .5s;
                 }
                 &.on::after {
                     content: ' ';
@@ -97,11 +100,12 @@ header {
         }
         & > a {
             position: absolute;
-            right: 0; top: 35px;
+            right: 28px; top: 33px;
             width: 164px; height: 31px;
             padding-top: 7px; padding-right:20px; text-align: center;
             border: solid 1px #dbdbdb;
-            border-radius: 15px;
+            -webkit-border-radius: 15px;
+                    border-radius: 15px;
             color: #000;
             font-size: 12px; font-family: 'Montserrat', serif; font-weight: 600;
             background:url('../img/icon_shop_arrow.png') 140px 50% no-repeat;
@@ -127,11 +131,12 @@ footer {
         padding: 20px 50px 0 50px;
         & > a {
             position: absolute;
-            right: 0; top: 35px;
+            right: 28px; top: 33px;
             width: 164px; height: 31px;
             padding-top: 7px; padding-right:20px; text-align: center;
             border: solid 1px #dbdbdb;
-            border-radius: 15px;
+            -webkit-border-radius: 15px;
+                    border-radius: 15px;
             color: #000;
             font-size: 12px; font-family: 'Montserrat', serif; font-weight: 600;
             background:url('../img/icon_shop_arrow.png') 140px 50% no-repeat;
@@ -152,6 +157,9 @@ footer {
                 }
                 a {
                     font-size: 14px; color: #555;
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
             &.brands {
@@ -247,16 +255,31 @@ footer {
 /********************** 
 * globals
 ***********************/
+//input focus remove outline
+*:focus {
+    outline: none;
+}
+
 //input text
 input[type="text"].normal {
     border: 1px solid #cacaca;
     font-size: 16px; color: #333;
     padding: 13px 20px;
 }
+input[type="text"].normal:focus {
+    border: 2px solid #000;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    transition: box-shadow 300ms cubic-bezier(0.4,0.0,0.2,1);
+}
 textarea.normal {
     border: 1px solid #cacaca;
     font-size: 16px; color: #333;
     padding: 10px 20px;
+}
+textarea.normal:focus {
+    border: 2px solid #000;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    transition: box-shadow 300ms cubic-bezier(0.4,0.0,0.2,1);
 }
 
 //input radio
@@ -270,14 +293,14 @@ input[type="radio"].default + label span {
     width: 24px;
     height: 24px;
     background: url('../img/icon_radio_off.png') 50% 50% no-repeat;
-    background-size: 24px auto;
+    -webkit-background-size: 24px auto;
+            background-size: 24px auto;
     margin-right: 1px;
     line-height: 20px;
     cursor: pointer;
 }
 input[type="radio"].default:checked + label span {
     background: url('../img/icon_radio_on.png') 50% 50% no-repeat;
-    background-size: 24px auto;
 }
 
 //checkbox
@@ -290,6 +313,8 @@ input[type="checkbox"].default + label span {
     width: 21px;
     height: 21px;
     background: url('../img/icon_checkbox_off.png') 50% 50% no-repeat;
+    -webkit-background-size: 21px auto;
+            background-size: 21px auto;
     cursor: pointer;
 }
 input[type="checkbox"].default:checked + label span {
