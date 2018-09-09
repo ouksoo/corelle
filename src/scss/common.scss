@@ -77,3 +77,11 @@ input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-in
     font-weight: normal;
     font-style: normal;
 }
+
+@import 'style.scss';
+@import 'pages/about.scss';
+@import 'pages/brand.scss';
+@import 'pages/news-event.scss';
+@import 'pages/product.scss';
+@import 'pages/support.scss';
+@import 'pages/webzine.scss';

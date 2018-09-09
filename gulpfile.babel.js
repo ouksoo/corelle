@@ -42,7 +42,7 @@ gulp.task('image', () => gulp.src(SRC.IMAGE)
 );
 
 // scss 변환
-gulp.task('sass', () => gulp.src(SRC.SCSS)
+gulp.task('sass', () => gulp.src('src/scss/common.scss')
 	.pipe(sass())
 	.pipe(concat('master.css'))
 	.pipe(gulp.dest(DEST.CSS))

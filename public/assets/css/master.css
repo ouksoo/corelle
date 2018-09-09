@@ -156,29 +156,31 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   font-style: normal; }
 
 /********************** 
+* val
+***********************/
+/********************** 
 * layout
 ***********************/
 div.wrapper {
   max-width: 1680px;
   min-width: 1500px;
   margin: 0 auto; }
-  div.wrapper section {
+  div.wrapper section div.main-title {
     width: 1080px;
-    margin: 0 auto; }
-    div.wrapper section div.main-title {
-      height: 293px;
-      text-align: center;
-      border-bottom: 1px solid #636363; }
-      div.wrapper section div.main-title h2 {
-        padding: 75px 0 26px 0;
-        font-family: 'Playfair Display', serif;
-        font-size: 60px;
-        color: #000; }
-      div.wrapper section div.main-title p.slogan {
-        font-size: 22px;
-        color: #555; }
-    div.wrapper section div.content {
-      padding: 0 0 90px 0; }
+    margin: 0 auto;
+    height: 200px;
+    text-align: center;
+    border-bottom: 1px solid #636363; }
+    div.wrapper section div.main-title h2 {
+      padding: 45px 0 15px 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 50px;
+      color: #000; }
+    div.wrapper section div.main-title p.slogan {
+      font-size: 16px;
+      color: #555; }
+  div.wrapper section div.content {
+    padding: 0 0 100px 0; }
 
 table.notable.normal th {
   font-size: 16px;
@@ -479,97 +481,496 @@ a.btn-default.on {
   background: #333;
   text-align: center; }
 
-.corelle-about {
-  border: 1px solid blue; }
+.corelle-about.about div.visual {
+  position: relative;
+  height: 890px;
+  background: url("../img/about/img_history.png") 50% -95px no-repeat; }
+  .corelle-about.about div.visual div.f {
+    position: absolute;
+    width: 224px;
+    height: 165px;
+    background: url("../img/about/about-logo-white.png") 50% 0% no-repeat;
+    padding-top: 135px;
+    left: 50%;
+    top: 50%;
+    margin: -83px 0 0 -112px; }
+    .corelle-about.about div.visual div.f p {
+      font-size: 22px;
+      color: #fff;
+      letter-spacing: -1px;
+      text-align: center; }
+
+.corelle-about.about div.area0 {
+  text-align: center; }
+  .corelle-about.about div.area0 p.f {
+    font-size: 40px;
+    color: #222;
+    font-weight: 600;
+    padding: 100px 0 30px 0; }
+  .corelle-about.about div.area0 p.s {
+    font-family: 'NanumBrunGothic', serif;
+    font-size: 16px;
+    color: #666;
+    line-height: 24px;
+    padding-bottom: 100px; }
+
+.corelle-about.about div.area1 {
+  height: 792px; }
+  .corelle-about.about div.area1 div.f {
+    float: left;
+    width: 50%; }
+  .corelle-about.about div.area1 div.s {
+    float: left;
+    width: 50%;
+    padding-left: 100px; }
+    .corelle-about.about div.area1 div.s p.f {
+      font-size: 40px;
+      color: #222;
+      font-weight: 600;
+      padding: 185px 0 30px 0; }
+    .corelle-about.about div.area1 div.s p.s {
+      font-family: 'NanumBrunGothic', serif;
+      font-size: 16px;
+      color: #666;
+      line-height: 24px;
+      padding-bottom: 100px; }
+    .corelle-about.about div.area1 div.s ul {
+      width: 650px; }
+      .corelle-about.about div.area1 div.s ul li {
+        float: left;
+        width: 137px;
+        height: 58px;
+        margin: 0 45px 15px 0; }
+
+.corelle-about.about div.area2 {
+  margin-top: 100px; }
+  .corelle-about.about div.area2 div.f {
+    float: left;
+    width: 50%;
+    padding-left: 100px;
+    background: #2b2b2b;
+    height: 789px; }
+    .corelle-about.about div.area2 div.f p.f {
+      font-size: 40px;
+      color: #fff;
+      font-weight: 600;
+      padding: 340px 0 26px 0; }
+    .corelle-about.about div.area2 div.f p.s {
+      font-family: 'NanumBrunGothic', serif;
+      font-size: 16px;
+      color: #fff;
+      line-height: 28px; }
+  .corelle-about.about div.area2 div.s {
+    float: left;
+    width: 50%; }
+
+.corelle-about.about div.area3 div.f {
+  float: left;
+  padding-left: 140px;
+  padding-top: 100px; }
+
+.corelle-about.about div.area3 div.s {
+  float: left;
+  width: 50%;
+  padding-left: 120px; }
+  .corelle-about.about div.area3 div.s p.f {
+    color: #222;
+    font-size: 40px;
+    padding-top: 160px; }
+    .corelle-about.about div.area3 div.s p.f span {
+      font-family: 'Montserrat', serif; }
+  .corelle-about.about div.area3 div.s div.history {
+    width: 100%;
+    padding-top: 47px; }
+    .corelle-about.about div.area3 div.s div.history div {
+      float: left;
+      width: 340px;
+      border-left: 1px solid #888;
+      height: 445px; }
+      .corelle-about.about div.area3 div.s div.history div span.tt {
+        display: inline-block;
+        margin-left: 27px;
+        font-family: "Montserrat", serif;
+        color: #222;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 3px 0 35px 0; }
+      .corelle-about.about div.area3 div.s div.history div ul {
+        margin-left: 27px; }
+        .corelle-about.about div.area3 div.s div.history div ul li {
+          padding-bottom: 30px; }
+          .corelle-about.about div.area3 div.s div.history div ul li:last-child {
+            padding-bottom: 0; }
+          .corelle-about.about div.area3 div.s div.history div ul li span.year {
+            float: left;
+            width: 70px;
+            font-family: "Montserrat", serif;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 32px; }
+          .corelle-about.about div.area3 div.s div.history div ul li span.his {
+            float: right;
+            width: 235px;
+            text-align: left;
+            font-size: 16px;
+            color: #444;
+            line-height: 32px; }
+
+.corelle-about.about div.area4 div.f {
+  float: left;
+  padding-left: 140px;
+  padding-top: 100px; }
+
+.corelle-about.about div.area4 div.s {
+  float: left;
+  width: 50%;
+  padding-left: 120px; }
+  .corelle-about.about div.area4 div.s p.f {
+    color: #222;
+    font-size: 40px;
+    padding-top: 289px; }
+    .corelle-about.about div.area4 div.s p.f span {
+      font-family: 'Montserrat', serif; }
+  .corelle-about.about div.area4 div.s div.history {
+    width: 100%;
+    padding-top: 47px; }
+    .corelle-about.about div.area4 div.s div.history div {
+      float: left;
+      width: 340px;
+      border-left: 1px solid #888;
+      height: 316px; }
+      .corelle-about.about div.area4 div.s div.history div span.tt {
+        display: inline-block;
+        margin-left: 27px;
+        font-family: "Montserrat", serif;
+        color: #222;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 3px 0 35px 0; }
+      .corelle-about.about div.area4 div.s div.history div ul {
+        margin-left: 27px; }
+        .corelle-about.about div.area4 div.s div.history div ul li {
+          padding-bottom: 30px; }
+          .corelle-about.about div.area4 div.s div.history div ul li:last-child {
+            padding-bottom: 0; }
+          .corelle-about.about div.area4 div.s div.history div ul li span.year {
+            float: left;
+            width: 70px;
+            font-family: "Montserrat", serif;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 32px; }
+          .corelle-about.about div.area4 div.s div.history div ul li span.his {
+            float: right;
+            width: 235px;
+            text-align: left;
+            font-size: 16px;
+            color: #444;
+            line-height: 32px; }
+
+.corelle-about.about div.area5 div.f {
+  float: left;
+  padding-left: 140px;
+  padding-top: 100px; }
+
+.corelle-about.about div.area5 div.s {
+  float: left;
+  width: 50%;
+  padding-left: 120px; }
+  .corelle-about.about div.area5 div.s p.f {
+    color: #222;
+    font-size: 40px;
+    padding-top: 289px; }
+    .corelle-about.about div.area5 div.s p.f span {
+      font-family: 'Montserrat', serif; }
+  .corelle-about.about div.area5 div.s div.history {
+    width: 100%;
+    padding-top: 47px; }
+    .corelle-about.about div.area5 div.s div.history div {
+      float: left;
+      width: 340px;
+      border-left: 1px solid #888;
+      height: 316px; }
+      .corelle-about.about div.area5 div.s div.history div span.tt {
+        display: inline-block;
+        margin-left: 27px;
+        font-family: "Montserrat", serif;
+        color: #222;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 3px 0 35px 0; }
+      .corelle-about.about div.area5 div.s div.history div ul {
+        margin-left: 27px; }
+        .corelle-about.about div.area5 div.s div.history div ul li {
+          padding-bottom: 30px; }
+          .corelle-about.about div.area5 div.s div.history div ul li:last-child {
+            padding-bottom: 0; }
+          .corelle-about.about div.area5 div.s div.history div ul li span.year {
+            float: left;
+            width: 70px;
+            font-family: "Montserrat", serif;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 32px; }
+          .corelle-about.about div.area5 div.s div.history div ul li span.his {
+            float: right;
+            width: 235px;
+            text-align: left;
+            font-size: 16px;
+            color: #444;
+            line-height: 32px; }
+
+.corelle-about.about div.area6 {
+  height: 1046px;
+  background: #ededed;
+  margin-top: 100px;
+  text-align: center; }
+  .corelle-about.about div.area6 p.f {
+    font-family: "Montserrat", serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #222;
+    padding-top: 94px;
+    line-height: 39px; }
+  .corelle-about.about div.area6 p.s {
+    font-size: 18px;
+    color: #444;
+    line-height: 28px;
+    padding: 27px 0 55px 0; }
+
+.corelle-about.about div.area7 {
+  margin-top: 100px;
+  text-align: center; }
+  .corelle-about.about div.area7 p.f {
+    font-family: "Montserrat", serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #222;
+    line-height: 39px; }
+  .corelle-about.about div.area7 p.s {
+    font-size: 18px;
+    color: #444;
+    line-height: 28px;
+    padding: 27px 0 55px 0; }
+  .corelle-about.about div.area7 ul {
+    margin-top: 100px; }
+    .corelle-about.about div.area7 ul li {
+      float: left;
+      width: 320px;
+      margin-right: 60px;
+      margin-bottom: 35px;
+      min-height: 490px; }
+      .corelle-about.about div.area7 ul li.min {
+        min-height: 250px; }
+      .corelle-about.about div.area7 ul li:nth-child(4n) {
+        margin-right: 0; }
+      .corelle-about.about div.area7 ul li span.logo {
+        display: block;
+        border-bottom: 1px solid #cacaca; }
+      .corelle-about.about div.area7 ul li p.award {
+        font-family: "Montserrat", serif;
+        font-size: 16px;
+        color: #555;
+        line-height: 28px;
+        padding-top: 15px;
+        text-align: left; }
+
+.corelle-about.contact div.visual {
+  position: relative;
+  height: 560px;
+  background: url("../img/about/img_contact.png") 50% 0px no-repeat; }
+  .corelle-about.contact div.visual div.f {
+    position: absolute;
+    width: 400px;
+    height: 120px;
+    left: 50%;
+    top: 50%;
+    margin: -60px 0 0 -200px;
+    text-align: center; }
+    .corelle-about.contact div.visual div.f p.title {
+      font-family: "Playfair Display", serif;
+      font-size: 60px;
+      color: #fff;
+      text-align: center; }
+    .corelle-about.contact div.visual div.f p.sub-title {
+      padding-top: 20px;
+      font-size: 22px;
+      color: #fff; }
+
+.corelle-about.contact div.infos {
+  height: 175px;
+  width: 1200px;
+  margin: 100px auto;
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+  padding: 27px 0; }
+  .corelle-about.contact div.infos div.f {
+    float: left;
+    width: 360px;
+    height: 120px;
+    border-right: 7px solid #f5f5f5;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 45px; }
+  .corelle-about.contact div.infos div.s {
+    float: left;
+    width: 830px;
+    padding-left: 42px; }
+    .corelle-about.contact div.infos div.s th {
+      text-align: left;
+      font-weight: 600;
+      padding-left: 38px; }
+      .corelle-about.contact div.infos div.s th.f {
+        background: url("../img/about/icon-address.png") 0 50% no-repeat; }
+      .corelle-about.contact div.infos div.s th.s {
+        background: url("../img/about/icon-as.png") 0 50% no-repeat; }
+      .corelle-about.contact div.infos div.s th.t {
+        background: url("../img/about/icon-envelope.png") 0 50% no-repeat; }
+    .corelle-about.contact div.infos div.s td {
+      font-size: 16px;
+      line-height: 22px;
+      color: #555;
+      padding: 7px 0; }
+      .corelle-about.contact div.infos div.s td a {
+        display: inline-block;
+        height: 34px;
+        border: 1px solid #d3d3d3;
+        padding: 6px 26px 5px 15px;
+        margin-left: 15px;
+        color: #555;
+        background: url("../img/about/contact_arrow.png") 88% 48% no-repeat; }
+
+.corelle-about.contact div.map-area {
+  height: 550px;
+  background: #f5f5f5; }
+
+.corelle-about.video-press {
+  width: 1080px;
+  margin: 0 auto; }
+  .corelle-about.video-press div.tabsets {
+    padding: 17px 0 17px 0;
+    text-align: center;
+    border-bottom: 1px solid #d0d0d0; }
+    .corelle-about.video-press div.tabsets a {
+      display: inline-block;
+      margin: 0 37px;
+      font-size: 20px;
+      color: #888; }
+      .corelle-about.video-press div.tabsets a.on {
+        color: #000; }
+  .corelle-about.video-press .container p.subject {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    padding: 22px 0 22px 0; }
+  .corelle-about.video-press .container p.date {
+    text-align: center;
+    font-size: 22px;
+    color: #888;
+    padding: 0px 0 30px 0; }
+  .corelle-about.video-press .container div.video-area {
+    height: 596px;
+    background: #f5f5f5; }
+  .corelle-about.video-press .container div.video-detail {
+    height: 140px;
+    background: #f5f5f5; }
+  .corelle-about.video-press .container div.video-list {
+    position: relative;
+    margin-top: 40px;
+    height: 175px;
+    background: #f5f5f5; }
 
 .corelle-brand {
   border: 1px solid blue; }
 
-.corelle-news.news div.tabsets {
-  padding: 32px 0 42px 0;
-  text-align: center; }
-  .corelle-news.news div.tabsets a {
-    display: inline-block;
-    margin: 0 37px;
-    font-size: 20px;
-    color: #888; }
-    .corelle-news.news div.tabsets a.on {
-      color: #000; }
-
-.corelle-news.news ul li {
-  float: left;
-  width: 522px;
-  margin-right: 36px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #cacaca; }
-  .corelle-news.news ul li p.subject {
-    font-size: 18px;
-    color: #333;
-    line-height: 26px;
-    padding: 20px 0;
-    height: 90px;
-    overflow: hidden; }
-  .corelle-news.news ul li p.date {
-    font-size: 14px;
-    color: #888;
-    padding-bottom: 20px; }
-    .corelle-news.news ul li p.date span {
+.corelle-news {
+  width: 1080px;
+  margin: 0 auto; }
+  .corelle-news.news div.tabsets {
+    padding: 17px 0 17px 0;
+    text-align: center;
+    border-bottom: 1px solid #d0d0d0; }
+    .corelle-news.news div.tabsets a {
       display: inline-block;
-      margin-left: 12px; }
-  .corelle-news.news ul li:nth-child(even) {
-    margin-right: 0; }
-
-.corelle-news.news .btn-area a.arrow-down {
-  background: url("../img/icon_more_arrow.png") 200px 50% no-repeat; }
-
-.corelle-news.news .container p.subject {
-  text-align: center;
-  font-size: 32px;
-  color: #333;
-  padding: 30px 0 15px 0; }
-
-.corelle-news.news .container p.date {
-  text-align: center;
-  font-size: 22px;
-  color: #888;
-  padding: 0px 0 30px 0; }
-
-.corelle-news.news .prev-next {
-  border-top: 2px solid #cacaca;
-  margin: 100px 0 24px 0; }
-  .corelle-news.news .prev-next th {
-    font-size: 16px;
-    font-weight: 700;
-    color: #333;
-    border-bottom: 2px solid #cacaca;
-    padding: 25px 0; }
-  .corelle-news.news .prev-next td {
-    font-size: 16px;
-    color: #333;
-    border-bottom: 2px solid #cacaca; }
-    .corelle-news.news .prev-next td a {
-      color: #333; }
-    .corelle-news.news .prev-next td.date {
+      margin: 0 37px;
+      font-size: 20px;
+      color: #888; }
+      .corelle-news.news div.tabsets a.on {
+        color: #000; }
+  .corelle-news.news ul li {
+    float: left;
+    width: 522px;
+    margin-right: 36px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cacaca; }
+    .corelle-news.news ul li p.subject {
+      font-size: 18px;
+      color: #333;
+      line-height: 26px;
+      padding: 20px 0;
+      height: 90px;
+      overflow: hidden; }
+    .corelle-news.news ul li p.date {
+      font-size: 14px;
       color: #888;
-      text-align: right;
-      padding-right: 20px; }
+      padding-bottom: 20px; }
+      .corelle-news.news ul li p.date span {
+        display: inline-block;
+        margin-left: 12px; }
+    .corelle-news.news ul li:nth-child(even) {
+      margin-right: 0; }
+  .corelle-news.news .btn-area a.arrow-down {
+    background: url("../img/icon_more_arrow.png") 200px 50% no-repeat; }
+  .corelle-news.news .container p.subject {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    padding: 22px 0 22px 0; }
+  .corelle-news.news .container p.date {
+    text-align: center;
+    font-size: 22px;
+    color: #888;
+    padding: 0px 0 30px 0; }
+  .corelle-news.news .prev-next {
+    border-top: 2px solid #cacaca;
+    margin: 100px 0 24px 0; }
+    .corelle-news.news .prev-next th {
+      font-size: 16px;
+      font-weight: 700;
+      color: #333;
+      border-bottom: 2px solid #cacaca;
+      padding: 25px 0; }
+    .corelle-news.news .prev-next td {
+      font-size: 16px;
+      color: #333;
+      border-bottom: 2px solid #cacaca; }
+      .corelle-news.news .prev-next td a {
+        color: #333; }
+      .corelle-news.news .prev-next td.date {
+        color: #888;
+        text-align: right;
+        padding-right: 20px; }
 
 .corelle-product {
   border: 1px solid blue; }
 
-.corelle-support.asking {
-  padding-top: 50px; }
-  .corelle-support.asking div.personal-agree {
-    border: 1px solid #cacaca;
-    padding: 25px 50px;
-    line-height: 24px;
-    font-size: 16px; }
-  .corelle-support.asking td input[type="file"] {
-    display: block;
-    font-size: 16px;
-    margin: 15px 0; }
-  .corelle-support.asking p.agreement {
-    padding: 15px 0 70px 0; }
+.corelle-support {
+  width: 1080px;
+  margin: 0 auto; }
+  .corelle-support.asking {
+    padding-top: 50px; }
+    .corelle-support.asking div.personal-agree {
+      border: 1px solid #cacaca;
+      padding: 25px 50px;
+      line-height: 24px;
+      font-size: 16px; }
+    .corelle-support.asking td input[type="file"] {
+      display: block;
+      font-size: 16px;
+      margin: 15px 0; }
+    .corelle-support.asking p.agreement {
+      padding: 15px 0 70px 0; }
 
 .corelle-webzine {
   border: 1px solid blue; }

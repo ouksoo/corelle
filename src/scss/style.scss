@@ -1,4 +1,11 @@
 /********************** 
+* val
+***********************/
+$f-m : 'Montserrat', serif;
+$f-p : 'Playfair Display', serif;
+$f-n : 'NanumBrunGothic', serif;
+
+/********************** 
 * layout
 ***********************/
 div.wrapper {
@@ -7,26 +14,26 @@ div.wrapper {
     margin: 0 auto;
 
     section {
-        width: 1080px;
-        margin: 0 auto;
 
         div.main-title {
-            height: 293px;
+            width: 1080px;
+            margin: 0 auto;
+            height: 200px;
             text-align: center;
             border-bottom: 1px solid #636363;            
 
             h2 {
-                padding: 75px 0 26px 0;
+                padding: 45px 0 15px 0;
                 font-family:'Playfair Display', serif;
-                font-size: 60px; color: #000;
+                font-size: 50px; color: #000;
             }
             p.slogan {
-                font-size: 22px; color: #555;
+                font-size: 16px; color: #555;
             }
         }
 
         div.content {
-            padding: 0 0 90px 0;
+            padding: 0 0 100px 0;
         }
     }
 }
