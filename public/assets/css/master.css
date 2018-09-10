@@ -144,16 +144,12 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 @font-face {
   font-family: 'NotoSansCJKkr';
   src: url("../img/font/notokr-regular.eot");
-  src: url("../img/font/notokr-regular.eot?#iefix") format("embedded-opentype"), url("../img/font/notokr-regular.woff2") format("woff2"), url("../img/font/notokr-regular.woff") format("woff"), url("../img/font/notokr-regular.ttf") format("truetype"), url("../img/font/notokr-regular.svg#notokr-regular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  src: url("../img/font/notokr-regular.eot?#iefix") format("embedded-opentype"), url("../img/font/notokr-regular.woff2") format("woff2"), url("../img/font/notokr-regular.woff") format("woff"), url("../img/font/notokr-regular.ttf") format("truetype"), url("../img/font/notokr-regular.svg#notokr-regular") format("svg"); }
 
 @font-face {
   font-family: 'NanumBrunGothic';
   src: url("../img/font/NanumBarunGothic.eot");
-  src: url("../img/font/NanumBarunGothic.eot?#iefix") format("embedded-opentype"), url("../img/font/NanumBarunGothic.woff2") format("woff2"), url("../img/font/NanumBarunGothic.woff") format("woff"), url("../img/font/NanumBarunGothic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
+  src: url("../img/font/NanumBarunGothic.eot?#iefix") format("embedded-opentype"), url("../img/font/NanumBarunGothic.woff2") format("woff2"), url("../img/font/NanumBarunGothic.woff") format("woff"), url("../img/font/NanumBarunGothic.ttf") format("truetype"); }
 
 /********************** 
 * val
@@ -870,16 +866,85 @@ a.btn-default.on {
     color: #888;
     padding: 0px 0 30px 0; }
   .corelle-about.video-press .container div.video-area {
+    position: relative;
     height: 596px;
     background: #f5f5f5; }
+    .corelle-about.video-press .container div.video-area a.play {
+      position: absolute;
+      width: 100%;
+      height: 596px;
+      background: url("../img/about/icon_plus.png") 0% 0% no-repeat;
+      text-indent: -9999px; }
+  .corelle-about.video-press .container div.article-area {
+    position: relative;
+    height: 596px;
+    background: #f5f5f5; }
+    .corelle-about.video-press .container div.article-area a.show {
+      position: absolute;
+      width: 66px;
+      height: 66px;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5) url("../img/about/icon_plus.png") 50% 50% no-repeat;
+      text-indent: -9999px; }
   .corelle-about.video-press .container div.video-detail {
     height: 140px;
-    background: #f5f5f5; }
+    padding: 20px 0px;
+    border-bottom: 1px solid #d0d0d0; }
+    .corelle-about.video-press .container div.video-detail div.f {
+      float: left;
+      width: 190px; }
+    .corelle-about.video-press .container div.video-detail div.s {
+      float: left;
+      width: 850px;
+      font-size: 16px;
+      color: #666;
+      line-height: 24px; }
   .corelle-about.video-press .container div.video-list {
     position: relative;
     margin-top: 40px;
-    height: 175px;
-    background: #f5f5f5; }
+    height: 175px; }
+    .corelle-about.video-press .container div.video-list div.slide-wrap {
+      width: 1080px;
+      height: 210px;
+      overflow: hidden; }
+      .corelle-about.video-press .container div.video-list div.slide-wrap ul li {
+        position: relative;
+        float: left;
+        width: 254px;
+        height: 175px;
+        margin-right: 21px;
+        background: #666; }
+        .corelle-about.video-press .container div.video-list div.slide-wrap ul li:last-child {
+          margin-right: 0; }
+        .corelle-about.video-press .container div.video-list div.slide-wrap ul li a.vd {
+          position: absolute;
+          width: 100%;
+          height: 175px;
+          background: url("../img/about/play-btn-small.png") 95% 95% no-repeat; }
+        .corelle-about.video-press .container div.video-list div.slide-wrap ul li a.ac {
+          display: block;
+          width: 100%;
+          height: 175px; }
+        .corelle-about.video-press .container div.video-list div.slide-wrap ul li span {
+          display: block;
+          padding-top: 12px;
+          text-align: center;
+          font-size: 16px;
+          color: #333; }
+    .corelle-about.video-press .container div.video-list a.arrow {
+      position: absolute;
+      width: 17px;
+      height: 31px;
+      text-indent: -999px; }
+      .corelle-about.video-press .container div.video-list a.arrow.video-left {
+        left: -30px;
+        top: 72px;
+        background: url("../img/about/icon_left_arrow.png") 95% 95% no-repeat; }
+      .corelle-about.video-press .container div.video-list a.arrow.video-right {
+        right: -30px;
+        top: 72px;
+        background: url("../img/about/icon_right_arrow.png") 95% 95% no-repeat; }
 
 .corelle-brand {
   border: 1px solid blue; }
@@ -971,6 +1036,35 @@ a.btn-default.on {
       margin: 15px 0; }
     .corelle-support.asking p.agreement {
       padding: 15px 0 70px 0; }
+  .corelle-support.caution div.tabsets {
+    padding: 17px 0 17px 0;
+    text-align: center;
+    border-bottom: 1px solid #d0d0d0; }
+    .corelle-support.caution div.tabsets a {
+      display: inline-block;
+      margin: 0 28px;
+      font-family: "Montserrat", serif;
+      font-size: 16px;
+      color: #888; }
+      .corelle-support.caution div.tabsets a.on {
+        color: #333;
+        font-weight: 600; }
+  .corelle-support.caution .caution-table th {
+    width: 130px;
+    padding: 25px 0 0 0;
+    text-align: center;
+    border-bottom: 1px solid #cacaca;
+    vertical-align: top; }
+    .corelle-support.caution .caution-table th img {
+      margin-bottom: 10px; }
+  .corelle-support.caution .caution-table td {
+    color: #333;
+    font-size: 16px;
+    padding: 23px 50px 25px 0;
+    line-height: 24px;
+    border-bottom: 1px solid #cacaca; }
+    .corelle-support.caution .caution-table td span.table-title {
+      font-weight: 600; }
 
 .corelle-webzine {
   border: 1px solid blue; }

@@ -21,4 +21,51 @@
 			padding: 15px 0 70px 0;
 		}
 	}
+
+	// caution
+	&.caution {
+
+		div.tabsets {
+            padding: 17px 0 17px 0;
+            text-align: center;
+            border-bottom: 1px solid #d0d0d0;
+
+            a {
+				display: inline-block; margin: 0 28px;
+				font-family: $f-m;
+                font-size: 16px;
+                color: #888;
+
+                &.on {
+					color: #333;
+					font-weight: 600;
+                }
+            }
+		}
+
+		.caution-table th {
+			width: 130px;
+			padding: 25px 0 0 0;
+			text-align: center;
+			border-bottom: 1px solid #cacaca;
+			vertical-align: top;
+
+			img {
+				margin-bottom: 10px;
+			}
+		}
+		.caution-table td {
+			color: #333;
+			font-size: 16px; padding: 23px 50px 25px 0;
+			line-height: 24px;
+			border-bottom: 1px solid #cacaca;
+
+			span.table-title {
+				font-weight: 600;				
+			}
+			p.table-content {
+
+			}
+		}
+	}
 }
