@@ -51,7 +51,7 @@ gulp.task('sass', () => gulp.src('src/scss/common.scss')
 // js
 gulp.task('js', () => gulp.src(SRC.JS)
     .pipe(babel())
-    .pipe(concat('master.js'))
+    // .pipe(concat('master.js'))
     .pipe(gulp.dest(DEST.JS))
 );
 

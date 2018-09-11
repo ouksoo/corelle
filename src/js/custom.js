@@ -5,6 +5,15 @@ let CORE = {
     init : function() {
         this.topMenuIndicator();
         this.naviMouseEvent();
+        this.realTabOperation();
+        this.frequentlyAskedQuestions();
+
+        // custom scrollbar plug
+        if($('div.video-detail div.s').length > 0) {
+            $('div.video-detail div.s').mCustomScrollbar({
+                theme : 'eoksoo'
+            });   
+        }
     },
     // GNB indicator init
     topMenuIndicator : function() {
@@ -28,9 +37,23 @@ let CORE = {
             if(!CORE.appSet.gnbActive){
                 $('nav a.here').addClass('on');
             }
-            
         });
     },
+    // TAB plug
+    realTabOperation : function() {
+        $('.tabsets.real-tab a').on('click', function() {
+            let tabIndex =  $(this).data('tabContent');
+            $(this).siblings().removeClass('on');            
+            $(this).addClass('on');
+        });
+    },
+    // FAQ
+    frequentlyAskedQuestions : function() {
+        $('.questions a.question-link').on('click', function(e){
+            e.preventDefault();
+
+        });
+    }
 }
 
 // apply AOS plugin
@@ -41,5 +64,5 @@ AOS.init({
 
 // after loaded execute
 window.onload = function() {
-    CORE.init();
+    CORE.init(); 
 };
