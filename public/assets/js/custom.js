@@ -16,6 +16,11 @@ var CORE = {
                 theme: 'eoksoo'
             });
         }
+        $('#innerGallery').bjqs({
+            height: 1024,
+            width: 1680,
+            responsive: true
+        });
     },
     // GNB indicator init
     topMenuIndicator: function topMenuIndicator() {
@@ -53,7 +58,17 @@ var CORE = {
     frequentlyAskedQuestions: function frequentlyAskedQuestions() {
         $('.questions a.question-link').on('click', function (e) {
             e.preventDefault();
+            if (!$(this).hasClass('on')) {
+                $('.questions div.answer').slideUp(300);
+            }
+            $('.questions a.question-link').removeClass('on');
+            $(this).addClass('on');
+            $(this).next('.answer').slideDown(300);
         });
+    },
+    // Article Show
+    articleShowGallery: function articleShowGallery() {
+        $('div.article-area a.show').on('click', function () {});
     }
 
     // apply AOS plugin
