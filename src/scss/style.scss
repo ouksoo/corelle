@@ -17,7 +17,7 @@ div.wrapper {
         padding-top: 94px;
 
         &.index-gallery {
-            padding-top: 0px;
+            // padding-top: 0px;
 
             div.inner-gallery {
                 height: 1024px;
@@ -87,9 +87,12 @@ header {
     nav {
         float: right;
         margin: 35px 220px 0 0;
+
         li {
             float:left;
             font-family: 'Montserrat', serif; font-weight: 600; font-size: 14px;
+            height: 60px;
+
             a {
                 position: relative;
                 display: inline-block;
@@ -97,6 +100,8 @@ header {
                 width: 160px; text-align: center;
                 color: #000;
                 border-left: 1px solid #898989;
+                vertical-align: top; 
+
                 &::after {
                     content: ' ';
                     position: absolute;
@@ -107,15 +112,16 @@ header {
                     -webkit-transition: width .5s, margin-left .5s;
                             transition: width .5s, margin-left .5s;
                 }
-                &.on::after {
-                    content: ' ';
-                    position: absolute;
-                    width: 70px; height: 2px;
-                    background: #000;                    
-                    left: 50%; bottom: -3px;
-                    margin-left: -35px;
-                }
             }
+            &.on a::after {
+                content: ' ';
+                position: absolute;
+                width: 70px; height: 2px;
+                background: #000;                    
+                left: 50%; bottom: -3px;
+                margin-left: -35px;
+            }
+
             &:last-child a {
                 border-right: 1px solid #898989;
             }
@@ -139,32 +145,102 @@ header {
         }
     }
 
-    &.main {
-        border-bottom: 0;
+    div.nav-sub {
+        display: none;
+        position: absolute;
+        top: 94px;
+        width: 100%;
+        background: #f6f6f6;
+        padding: 20px 0;
 
-        h1 {
-            position: absolute;
-            width: 87px; height: 40px;
-            background:url('../img/logo-white.png') 0 0 no-repeat;
-            left: 50px; top: 28px;
-            text-indent: -9999px;
-            cursor: pointer;
-        }
-        nav {
-            a {
-                color: #fff;
-                &::after {
-                    background: #fff;
-                }
-                &.on::after {
-                    background: #fff;
-                }
-            }
+        .show-submenu {
+            float: right;
+            position: relative;
+            padding-right: 220px;
+
             & > a {
-                background:url('../img/icon_shop_arrow_white.png') 140px 50% no-repeat;
+                position: absolute;
+                right: 28px; top: 33px;
+                width: 164px; height: 31px;
+                padding-top: 7px; padding-right:20px; text-align: center;
+                border: solid 1px #dbdbdb;
+                -webkit-border-radius: 15px;
+                        border-radius: 15px;
+                color: #000;
+                font-size: 12px; font-family: 'Montserrat', serif; font-weight: 600;
+                background:url('../img/icon_shop_arrow.png') 140px 50% no-repeat;
+    
+                span {
+                    font-family: 'NanumBrunGothic', serif;
+                    font-weight: 700;
+                }
+            }
+            ul {
+                float: left;
+                width: 160px;
+                border-left: 1px solid rgba(136,136,136,.25);
+                padding-left: 15px;
+
+                &:last-child {
+                    border-right: 1px solid rgba(136,136,136,.25);
+                }
+
+                li {
+                    padding: 3px 0;
+                    a {
+                        font-size: 14px; color: #555;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                &.brands {
+                    a {
+                        font-family: 'Montserrat', serif;
+                    }
+                    span.line {
+                        display:block; height: 1px; width: 20px; background: #d7d7d7;
+                    }
+                }
+                &.webzine {
+                    li.s {
+                        a {
+                            display: inline-block;
+                            padding-right: 10px;
+                            background: url('../img/copyright-arrow.png') right 35% no-repeat;
+                        }
+                    }
+                }
             }
         }
-    }  
+    }
+
+    // &.main {
+    //     border-bottom: 0;
+
+    //     h1 {
+    //         position: absolute;
+    //         width: 87px; height: 40px;
+    //         background:url('../img/logo-white.png') 0 0 no-repeat;
+    //         left: 50px; top: 28px;
+    //         text-indent: -9999px;
+    //         cursor: pointer;
+    //     }
+    //     nav {
+    //         a {
+    //             color: #fff;
+    //             &::after {
+    //                 background: #fff;
+    //             }
+    //             &.on::after {
+    //                 background: #fff;
+    //             }
+    //         }
+    //         & > a {
+    //             background:url('../img/icon_shop_arrow_white.png') 140px 50% no-repeat;
+    //         }
+    //     }
+    // }  
 }
 
 /********************** 
