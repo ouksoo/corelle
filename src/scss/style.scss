@@ -1,7 +1,7 @@
 /********************** 
 * val
 ***********************/
-$f-m : 'Montserrat', serif;
+$f-m : 'Karla', sans-serif;
 $f-p : 'Playfair Display', serif;
 $f-n : 'NanumBrunGothic', serif;
 
@@ -14,7 +14,7 @@ div.wrapper {
     margin: 0 auto;
 
     section {
-        padding-top: 94px;
+        // padding-top: 94px;
 
         &.index-gallery {
             // padding-top: 0px;
@@ -27,7 +27,8 @@ div.wrapper {
         div.main-title {
             width: 1080px;
             margin: 0 auto;
-            height: 200px;
+            height: 294px;
+            padding-top: 94px;
             text-align: center;
             border-bottom: 1px solid #636363;            
 
@@ -72,8 +73,12 @@ header {
     position: absolute; 
     width: 100%; max-width: 1680px; min-width:1500px; 
     height: 94px; 
-    border-bottom: 1px solid #e5e5e5;
+    background: rgba(255,255,255,0.9);
     z-index: 3;
+
+    &.on {
+        background: rgba(255,255,255,1);
+    }
 
     h1 {
         position: absolute;
@@ -90,7 +95,7 @@ header {
 
         li {
             float:left;
-            font-family: 'Montserrat', serif; font-weight: 600; font-size: 14px;
+            font-family: $f-m; font-weight: 700; font-size: 14px;
             height: 60px;
 
             a {
@@ -135,7 +140,7 @@ header {
             -webkit-border-radius: 15px;
                     border-radius: 15px;
             color: #000;
-            font-size: 12px; font-family: 'Montserrat', serif; font-weight: 600;
+            font-size: 12px; font-family: $f-m; font-weight: 600;
             background:url('../img/icon_shop_arrow.png') 140px 50% no-repeat;
 
             span {
@@ -167,7 +172,7 @@ header {
                 -webkit-border-radius: 15px;
                         border-radius: 15px;
                 color: #000;
-                font-size: 12px; font-family: 'Montserrat', serif; font-weight: 600;
+                font-size: 12px; font-family: $f-m; font-weight: 600;
                 background:url('../img/icon_shop_arrow.png') 140px 50% no-repeat;
     
                 span {
@@ -196,7 +201,7 @@ header {
                 }
                 &.brands {
                     a {
-                        font-family: 'Montserrat', serif;
+                        font-family: $f-m;
                     }
                     span.line {
                         display:block; height: 1px; width: 20px; background: #d7d7d7;
@@ -214,33 +219,32 @@ header {
             }
         }
     }
+}
 
-    // &.main {
-    //     border-bottom: 0;
+div.index-in {
+    position: relative;
 
-    //     h1 {
-    //         position: absolute;
-    //         width: 87px; height: 40px;
-    //         background:url('../img/logo-white.png') 0 0 no-repeat;
-    //         left: 50px; top: 28px;
-    //         text-indent: -9999px;
-    //         cursor: pointer;
-    //     }
-    //     nav {
-    //         a {
-    //             color: #fff;
-    //             &::after {
-    //                 background: #fff;
-    //             }
-    //             &.on::after {
-    //                 background: #fff;
-    //             }
-    //         }
-    //         & > a {
-    //             background:url('../img/icon_shop_arrow_white.png') 140px 50% no-repeat;
-    //         }
-    //     }
-    // }  
+    p.slogans {
+        position: absolute;
+        text-align: center;
+        left: 50%; top: 50%;
+        margin: -10px 0 0 -123px;
+
+        span.a {
+            display: block;
+            font-size: 42px;
+            line-height: 52px;
+            color: #fff;
+            font-family: $f-m;
+            padding-bottom: 5px;
+        }
+        span.b {
+            display: block;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 600;
+        }
+    }
 }
 
 /********************** 
@@ -263,7 +267,7 @@ footer {
             -webkit-border-radius: 15px;
                     border-radius: 15px;
             color: #000;
-            font-size: 12px; font-family: 'Montserrat', serif; font-weight: 600;
+            font-size: 12px; font-family: $f-m; font-weight: 600;
             background:url('../img/icon_shop_arrow.png') 140px 50% no-repeat;
 
             span {
@@ -277,7 +281,7 @@ footer {
             li {
                 padding: 3px 0;
                 &.f {
-                    font-family: 'Montserrat', serif; font-weight: 600; font-size: 15px; color: #000;
+                    font-family: $f-m; font-weight: 600; font-size: 15px; color: #000;
                     padding-bottom: 20px;
                 }
                 a {
@@ -289,7 +293,7 @@ footer {
             }
             &.brands {
                 a {
-                    font-family: 'Montserrat', serif;
+                    font-family: $f-m;
                 }
                 span.line {
                     display:block; height: 1px; width: 20px; background: #d7d7d7;
@@ -350,7 +354,7 @@ footer {
         a, p {
             color: #ccc;
         }
-        .f {font-family: 'Montserrat', serif;}
+        .f {font-family: $f-m}
         ul.sns {
             position: absolute;
             right: 37px; top: 25px;
@@ -398,6 +402,28 @@ div.film {
         right: 35px; top: 35px;
         background:url('../img/icon_close_x.png') 50% 50% no-repeat;
         text-indent: -9999px;
+    }
+}
+
+div.gallery {
+    position: absolute;
+    z-index: 6;
+    left: 50%;
+    margin: 0 0 0 -589px;
+
+    a.article-left {
+        position: absolute;
+        top: 50%;
+        width: 42px; height: 73px;
+        background: url('../img/about/icon_article_right.png') 0 0 no-repeat;
+        margin: -36px 0 0 -100px;
+    }
+    a.article-right {
+        position: absolute;
+        top: 50%; right: 0;
+        width: 42px; height: 73px;
+        background: url('../img/about/icon_article_left.png') 0 0 no-repeat;
+        margin: -36px -100px 0 0px;
     }
 }
 

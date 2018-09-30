@@ -1,3 +1,258 @@
 .corelle-product {
-	border: 1px solid blue;
+	
+	div.product-tab {
+
+		ul.company {
+			width: 1392px;
+			margin: 0 auto;
+			padding-bottom: 74px;
+
+			li {
+				position: relative;
+				float: left;
+				width: 174px;
+				height: 89px;
+				border: 1px solid #dcdcdc;
+				margin-left: -1px;
+				margin-bottom: -1px;
+				
+				&:last-child {
+					background: #f7f7f7;
+				}
+
+				a {
+					position: absolute;
+					width: 174px;
+					height: 89px;
+					text-indent: -9999px;
+					left: 0; top: 0;
+				}
+				&.on > a {
+					left: -1px; top: -1px;
+					border: 3px solid #000;
+					// background: #fff;
+					z-index: 1;
+				}
+
+				&.p-1 {
+					background:url('../img/product/tab_logo_1_off.png') 0 0 no-repeat;
+					&.on {
+						background:url('../img/product/tab_logo_1_on.png') 0 0 no-repeat;
+					}
+				}
+				&.p-2 {
+					background:url('../img/product/tab_logo_2_off.png') 0 0 no-repeat;
+					&.on {
+						background:url('../img/product/tab_logo_2_on.png') 0 0 no-repeat;
+					}
+				}
+				&.p-3 {
+					background:url('../img/product/tab_logo_3_off.png') 0 0 no-repeat;
+					&.on {
+						background:url('../img/product/tab_logo_3_on.png') 0 0 no-repeat;
+					}
+				}
+				&.p-4 {
+					background:url('../img/product/tab_logo_4_off.png') 0 0 no-repeat;
+					&.on {
+						background:url('../img/product/tab_logo_4_on.png') 0 0 no-repeat;
+					}
+				}
+				&.p-5 {
+					background:url('../img/product/tab_logo_5_off.png') 0 0 no-repeat;
+					&.on {
+						background:url('../img/product/tab_logo_5_on.png') 0 0 no-repeat;
+					}
+				}
+				&.p-6 {
+					background:url('../img/product/tab_logo_6_off.png') 0 0 no-repeat;
+					&.on {
+						background:url('../img/product/tab_logo_6_on.png') 0 0 no-repeat;
+					}
+				}
+				&.p-7 {
+					background:url('../img/product/tab_logo_7_off.png') 0 0 no-repeat;
+					&.on {
+						background:url('../img/product/tab_logo_7_on.png') 0 0 no-repeat;
+					}
+				}
+				&.p-8 {
+					background:url('../img/product/tab_logo_8_off.png') 0 0 no-repeat;
+					&.on {
+						background:url('../img/product/tab_logo_8_on.png') 0 0 no-repeat;
+					}
+				}
+			}
+		}
+	}
+
+	div.product-category {
+
+		div.product-name {
+			position: relative;
+			height: 125px;
+			border-top: 1px solid #8d8d8d;
+			border-bottom: 1px solid #e0e0e0;
+
+			a.view-detail {
+				position: absolute;
+				right: 25px; top: 50px;
+				font-size: 15px; line-height: 22px; color: #555;
+				padding-right: 20px;
+				background: url('../img/icon_small_arrow_right.png') right 10% no-repeat;
+			}
+			
+			&.corelle {
+				background:url('../img/product/logo_small_corelle.png') 50% 50% no-repeat;
+			}
+			&.marketm {
+				background:url('../img/product/logo_small_marketm.png') 50% 50% no-repeat;
+			}
+			&.prepware {
+				background:url('../img/product/pyrex_name_1.png') 50% 50% no-repeat;
+			}
+			&.storage {
+				background:url('../img/product/pyrex_name_2.png') 50% 50% no-repeat;
+			}
+			&.beverage {
+				background:url('../img/product/pyrex_name_3.png') 50% 50% no-repeat;
+			}
+			&.cookware {
+				background:url('../img/product/corning_name_1.png') 50% 50% no-repeat;
+			}
+			&.popinmug {
+				background:url('../img/product/corning_name_2.png') 50% 50% no-repeat;
+			}
+			&.storage-snap {
+				background:url('../img/product/snapware_name_1.png') 50% 50% no-repeat;
+			}
+			&.prohold {
+				background:url('../img/product/chicago_name_1.png') 50% 50% no-repeat;
+			}
+			&.fullerton {
+				background:url('../img/product/chicago_name_2.png') 50% 50% no-repeat;
+			}
+			&.uptown {
+				background:url('../img/product/chicago_name_3.png') 50% 50% no-repeat;
+			}
+			&.kinzie {
+				background:url('../img/product/chicago_name_4.png') 50% 50% no-repeat;
+			}
+			&.vivid {
+				background:url('../img/product/chicago_name_5.png') 50% 50% no-repeat;
+			}
+			&.procontrol {
+				background:url('../img/product/chicago_name_6.png') 50% 50% no-repeat;
+			}
+			&.shears {
+				background:url('../img/product/chicago_name_7.png') 50% 50% no-repeat;
+			}
+			&.classic {
+				background:url('../img/product/vision_name_1.png') 50% 50% no-repeat;
+			}
+			&.flair {
+				background:url('../img/product/vision_name_2.png') 50% 50% no-repeat;
+			}
+			&.diamond {
+				background:url('../img/product/vision_name_3.png') 50% 50% no-repeat;
+			}
+			&.reverse {
+				background:url('../img/product/vision_name_4.png') 50% 50% no-repeat;
+			}
+			&.frypan {
+				background:url('../img/product/cook_name_1.png') 50% 50% no-repeat;
+			}
+			&.pot {
+				background:url('../img/product/cook_name_2.png') 50% 50% no-repeat;
+			}
+			&.oxo-preparing {
+				background:url('../img/product/oxo_name_1.png') 50% 50% no-repeat;
+			}
+			&.oxo-cooking {
+				background:url('../img/product/oxo_name_2.png') 50% 50% no-repeat;
+			}
+			&.oxo-storage {
+				background:url('../img/product/oxo_name_3.png') 50% 50% no-repeat;
+			}
+			&.oxo-beverage {
+				background:url('../img/product/oxo_name_4.png') 50% 50% no-repeat;
+			}
+			&.oxo-cleaning {
+				background:url('../img/product/oxo_name_5.png') 50% 50% no-repeat;
+			}
+			&.oxo-tot {
+				background:url('../img/product/oxo_name_6.png') 50% 50% no-repeat;
+			}
+		}
+		p.sub-tit {
+			font-size: 16px; text-align: center;
+			color: #555; line-height: 60px;
+			border-bottom: 1px solid #e0e0e0;
+		}
+
+		div.sliders {
+
+			div.slider-inner {
+				padding-bottom: 75px;
+				border-bottom: 1px solid #e0e0e0;
+
+				ul {
+					width: 1420px;
+					margin: 0 auto;
+					padding: 17px 0 0px 0;
+
+					li {
+						position: relative;
+						float: left;
+						width: 224px;
+						margin: 0 30px 25px 30px;
+
+						div.info {
+							display: none;
+							position: absolute;
+							top: 0; left: 0;
+							border: 1px solid #111;
+							width: 224px; height: 224px;
+
+							a {
+								position: absolute;
+								font-size: 14px;
+								text-align: center;
+								width: 100%;
+								line-height: 40px;
+								color: #111;
+								border: 1px solid #d8d8d8;
+								background: rgba(255,255,255,0.9);
+
+								&.a {
+									border-bottom: 1px solid #d8d8d8;
+									bottom: 41px;
+								}
+								&.b {
+									bottom: 0;
+									padding-right: 10px;
+									background-image: url('../img/icon_shoppingmall_rrow.png');
+									background-repeat: no-repeat;
+									background-position: 165px 48%;
+								}
+							}
+						}
+						p.what-p {
+							text-align: center;
+							font-size: 16px; color: #444;
+							padding-top: 12px;
+
+							span.eng {
+								font-family: $f-m;
+								font-weight: 700;
+							}
+							span.kor {
+
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
