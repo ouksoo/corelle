@@ -22,7 +22,7 @@ appendSubmenu += '          <li><a href="news-list.html">홍보영상 및 보도
 appendSubmenu += '      </ul>';
 appendSubmenu += '      <ul class="brands">';
 appendSubmenu += '          <li><a href="#">Corelle</a></li>';
-appendSubmenu += '          <li><a href="#">Pyrex</a></li>';
+appendSubmenu += '          <li><a href="brand_pyrex.html">Pyrex</a></li>';
 appendSubmenu += '          <li><a href="#">Vision</a></li>';
 appendSubmenu += '          <li><a href="#">Corningware</a></li>';
 appendSubmenu += '          <li><a href="#">Snapware</a></li>';
@@ -63,7 +63,7 @@ appendFooter += '    </ul>';
 appendFooter += '    <ul class="brands">';
 appendFooter += '        <li class="f">Brands</li>';
 appendFooter += '        <li><a href="#">Corelle</a></li>';
-appendFooter += '        <li><a href="#">Pyrex</a></li>';
+appendFooter += '        <li><a href="brand_pyrex.html">Pyrex</a></li>';
 appendFooter += '        <li><a href="#">Vision</a></li>';
 appendFooter += '        <li><a href="#">Corningware</a></li>';
 appendFooter += '        <li><a href="#">Snapware</a></li>';
