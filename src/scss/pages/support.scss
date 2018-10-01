@@ -189,7 +189,7 @@
 					border: 1px solid #dcdcdc;
 					margin-left: -1px;
 					margin-bottom: -1px;
-					background: #f7f7f7;
+					background: #fff;
 
 					a {
 						position: absolute;
@@ -198,11 +198,48 @@
 						text-indent: -9999px;
 						left: 0; top: 0;
 
-						&.on {
+						&.store1 {background:url('../img/support/store_1_off.png') 0 0 no-repeat}
+						&.store2 {background:url('../img/support/store_2_off.png') 0 0 no-repeat}
+						&.store3 {background:url('../img/support/store_3_off.png') 0 0 no-repeat}
+						&.store4 {background:url('../img/support/store_4_off.png') 0 0 no-repeat}
+						&.store5 {background:url('../img/support/store_5_off.png') 0 0 no-repeat}
+						&.store6 {background:url('../img/support/store_6_off.png') 0 0 no-repeat}
+						&.store7 {background:url('../img/support/store_7_off.png') 0 0 no-repeat}
+						&.store8 {background:url('../img/support/store_8_off.png') 0 0 no-repeat}
+						&.store9 {background:url('../img/support/store_9_off.png') 0 0 no-repeat}
+						&.store10 {background:url('../img/support/store_10_off.png') 0 0 no-repeat}
+						&.store11 {background:url('../img/support/store_11_off.png') 0 0 no-repeat}
+						&.store12 {background:url('../img/support/store_12_off.png') 0 0 no-repeat}
+						&.store13 {background:url('../img/support/store_13_off.png') 0 0 no-repeat}
+						&.store14 {background:url('../img/support/store_14_off.png') 0 0 no-repeat}
+						&.store15 {background:url('../img/support/store_15_off.png') 0 0 no-repeat}
+						&.store16 {background:url('../img/support/store_16_off.png') 0 0 no-repeat}
+						&.store17 {background:url('../img/support/store_17_off.png') 0 0 no-repeat}
+						&.store18 {background:url('../img/support/store_18_off.png') 0 0 no-repeat}
+
+						&:hover {
 							left: -1px; top: -1px;
 							border: 1px solid #000;
-							background: #fff;
 							z-index: 1;
+
+							&.store1 {background:url('../img/support/store_1_on.png') 0 0 no-repeat}
+							&.store2 {background:url('../img/support/store_2_on.png') 0 0 no-repeat}
+							&.store3 {background:url('../img/support/store_3_on.png') 0 0 no-repeat}
+							&.store4 {background:url('../img/support/store_4_on.png') 0 0 no-repeat}
+							&.store5 {background:url('../img/support/store_5_on.png') 0 0 no-repeat}
+							&.store6 {background:url('../img/support/store_6_on.png') 0 0 no-repeat}
+							&.store7 {background:url('../img/support/store_7_on.png') 0 0 no-repeat}
+							&.store8 {background:url('../img/support/store_8_on.png') 0 0 no-repeat}
+							&.store9 {background:url('../img/support/store_9_on.png') 0 0 no-repeat}
+							&.store10 {background:url('../img/support/store_10_on.png') 0 0 no-repeat}
+							&.store11 {background:url('../img/support/store_11_on.png') 0 0 no-repeat}
+							&.store12 {background:url('../img/support/store_12_on.png') 0 0 no-repeat}
+							&.store13 {background:url('../img/support/store_13_on.png') 0 0 no-repeat}
+							&.store14 {background:url('../img/support/store_14_on.png') 0 0 no-repeat}
+							&.store15 {background:url('../img/support/store_15_on.png') 0 0 no-repeat}
+							&.store16 {background:url('../img/support/store_16_on.png') 0 0 no-repeat}
+							&.store17 {background:url('../img/support/store_17_on.png') 0 0 no-repeat}
+							&.store18 {background:url('../img/support/store_18_on.png') 0 0 no-repeat}
 						}
 					}
 				}
