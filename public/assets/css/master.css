@@ -351,9 +351,40 @@ ul.bxslider {
 * layout
 ***********************/
 div.wrapper {
+  position: relative;
   max-width: 1680px;
   min-width: 1500px;
   margin: 0 auto; }
+  div.wrapper div.skyscraper {
+    position: fixed;
+    bottom: 280px;
+    margin-left: 1700px;
+    font-size: 12px;
+    font-family: "Karla", sans-serif;
+    text-align: center;
+    z-index: 10;
+    font-weight: 700; }
+    div.wrapper div.skyscraper a.sky-shop {
+      display: inline-block;
+      width: 63px;
+      height: 30px;
+      padding: 6px 5px 0 0;
+      border: 1px solid #dbdbdb;
+      -webkit-border-radius: 15px;
+      border-radius: 15px;
+      background: #fff url("../img/icon_shop.png") 45px 50% no-repeat;
+      color: #000; }
+    div.wrapper div.skyscraper a.sky-top {
+      display: inline-block;
+      margin-top: 8px;
+      width: 63px;
+      height: 30px;
+      padding: 6px 5px 0 0;
+      border: 1px solid #dbdbdb;
+      -webkit-border-radius: 15px;
+      border-radius: 15px;
+      background: #fff url("../img/icon_shop.png") 45px 50% no-repeat;
+      color: #000; }
   div.wrapper section.index-gallery div.inner-gallery {
     height: 1024px;
     margin-bottom: 20px; }
@@ -404,11 +435,11 @@ header {
     background: white; }
   header h1 {
     position: absolute;
-    width: 87px;
-    height: 40px;
+    width: 88px;
+    height: 45px;
     background: url("../img/logo.png") 0 0 no-repeat;
     left: 50px;
-    top: 28px;
+    top: 25px;
     text-indent: -9999px;
     cursor: pointer; }
   header nav {
@@ -532,10 +563,7 @@ div.index-in {
   position: relative; }
   div.index-in p.slogans {
     position: absolute;
-    text-align: center;
-    left: 50%;
-    top: 50%;
-    margin: -10px 0 0 -123px; }
+    text-align: center; }
     div.index-in p.slogans span.a {
       display: block;
       font-size: 42px;
@@ -1102,10 +1130,10 @@ yx-axis
 .mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail,
 .mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,
 .mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail {
-  -webkit-transition: width .2s ease-out .2s, height .2s ease-out .2s,  margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,  margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
-  -moz-transition: width .2s ease-out .2s, height .2s ease-out .2s,  margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,  margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
-  -o-transition: width .2s ease-out .2s, height .2s ease-out .2s,  margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,  margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
-  transition: width .2s ease-out .2s, height .2s ease-out .2s,  margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,  margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out; }
+  -webkit-transition: width .2s ease-out .2s, height .2s ease-out .2s,  margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,  margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -moz-transition: width .2s ease-out .2s, height .2s ease-out .2s,  margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,  margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -o-transition: width .2s ease-out .2s, height .2s ease-out .2s,  margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,  margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  transition: width .2s ease-out .2s, height .2s ease-out .2s,  margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,  margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out; }
 
 /* theme: "eoksoo" */
 .mCS-eoksoo.mCSB_scrollTools .mCSB_draggerRail {
@@ -1966,13 +1994,72 @@ p.bjqs-caption {
     .brand-wrap div.pattern div.pattern-list {
       width: 1450px;
       height: 155px;
+      overflow-y: scroll;
       margin: 42px auto 0 auto;
       border-top: 1px solid #e3e3e3;
       border-bottom: 1px solid #e3e3e3; }
+      .brand-wrap div.pattern div.pattern-list div.patter-pagers ul {
+        width: 1395px;
+        margin: 8px auto 0 auto; }
+        .brand-wrap div.pattern div.pattern-list div.patter-pagers ul li {
+          float: left;
+          width: 155px; }
+          .brand-wrap div.pattern div.pattern-list div.patter-pagers ul li a {
+            display: block;
+            text-align: center;
+            font-size: 16px;
+            color: #888;
+            padding-top: 14px;
+            height: 46px; }
+            .brand-wrap div.pattern div.pattern-list div.patter-pagers ul li a.active {
+              font-size: 16px;
+              color: #111;
+              font-weight: 600;
+              text-decoration: underline; }
     .brand-wrap div.pattern div.pattern-detail {
       width: 1450px;
       height: 540px;
       margin: 0 auto; }
+      .brand-wrap div.pattern div.pattern-detail ul.corelle-pattern li {
+        padding-top: 25px; }
+        .brand-wrap div.pattern div.pattern-detail ul.corelle-pattern li div.patter-wrap {
+          width: 1150px;
+          height: 410px;
+          margin: 0 auto; }
+          .brand-wrap div.pattern div.pattern-detail ul.corelle-pattern li div.patter-wrap div.left {
+            float: left;
+            width: 525px; }
+          .brand-wrap div.pattern div.pattern-detail ul.corelle-pattern li div.patter-wrap div.right {
+            float: left;
+            width: 625px;
+            text-align: left; }
+            .brand-wrap div.pattern div.pattern-detail ul.corelle-pattern li div.patter-wrap div.right p.name {
+              font-family: "Karla", sans-serif;
+              font-size: 58px;
+              font-weight: 700;
+              color: #444;
+              line-height: 76px; }
+            .brand-wrap div.pattern div.pattern-detail ul.corelle-pattern li div.patter-wrap div.right p.name-kor {
+              font-size: 16px;
+              color: #444;
+              font-weight: 600;
+              line-height: 24px;
+              padding-bottom: 10px; }
+            .brand-wrap div.pattern div.pattern-detail ul.corelle-pattern li div.patter-wrap div.right p.cont {
+              font-size: 16px;
+              color: #444;
+              line-height: 24px; }
+            .brand-wrap div.pattern div.pattern-detail ul.corelle-pattern li div.patter-wrap div.right a.product-view {
+              display: inline-block;
+              font-size: 13px;
+              text-align: center;
+              line-height: 26px;
+              font-weight: 600;
+              color: #333;
+              padding: 3px 49px 2px 38px;
+              margin-top: 40px;
+              border: 1px solid #cacaca;
+              background: url("../img/brand/btn_arrow.png") 100px 50% no-repeat; }
   .brand-wrap div.market {
     padding: 106px 0 117px 0;
     text-align: center; }
@@ -2008,13 +2095,72 @@ p.bjqs-caption {
     .brand-wrap div.pattern-msny div.pattern-list {
       width: 1450px;
       height: 55px;
+      overflow-y: scroll;
       margin: 42px auto 0 auto;
       border-top: 1px solid #e3e3e3;
       border-bottom: 1px solid #e3e3e3; }
+      .brand-wrap div.pattern-msny div.pattern-list div.pattern-items ul {
+        width: 1395px;
+        margin: 4px auto 0 auto; }
+        .brand-wrap div.pattern-msny div.pattern-list div.pattern-items ul li {
+          float: left;
+          width: 155px; }
+          .brand-wrap div.pattern-msny div.pattern-list div.pattern-items ul li a {
+            display: block;
+            text-align: center;
+            font-size: 16px;
+            color: #888;
+            padding-top: 14px;
+            height: 46px; }
+            .brand-wrap div.pattern-msny div.pattern-list div.pattern-items ul li a.active {
+              font-size: 16px;
+              color: #111;
+              font-weight: 600;
+              text-decoration: underline; }
     .brand-wrap div.pattern-msny div.pattern-detail {
       width: 1450px;
-      height: 350px;
+      height: 420px;
       margin: 0 auto; }
+      .brand-wrap div.pattern-msny div.pattern-detail ul.msny-pattern li {
+        padding-top: 25px; }
+        .brand-wrap div.pattern-msny div.pattern-detail ul.msny-pattern li div.patter-wrap {
+          width: 1150px;
+          height: 410px;
+          margin: 0 auto; }
+          .brand-wrap div.pattern-msny div.pattern-detail ul.msny-pattern li div.patter-wrap div.left {
+            float: left;
+            width: 525px; }
+          .brand-wrap div.pattern-msny div.pattern-detail ul.msny-pattern li div.patter-wrap div.right {
+            float: left;
+            width: 625px;
+            text-align: left; }
+            .brand-wrap div.pattern-msny div.pattern-detail ul.msny-pattern li div.patter-wrap div.right p.name {
+              font-family: "Karla", sans-serif;
+              font-size: 58px;
+              font-weight: 700;
+              color: #444;
+              line-height: 76px; }
+            .brand-wrap div.pattern-msny div.pattern-detail ul.msny-pattern li div.patter-wrap div.right p.name-kor {
+              font-size: 16px;
+              color: #444;
+              font-weight: 600;
+              line-height: 24px;
+              padding-bottom: 10px; }
+            .brand-wrap div.pattern-msny div.pattern-detail ul.msny-pattern li div.patter-wrap div.right p.cont {
+              font-size: 16px;
+              color: #444;
+              line-height: 24px; }
+            .brand-wrap div.pattern-msny div.pattern-detail ul.msny-pattern li div.patter-wrap div.right a.product-view {
+              display: inline-block;
+              font-size: 13px;
+              text-align: center;
+              line-height: 26px;
+              font-weight: 600;
+              color: #333;
+              padding: 3px 49px 2px 38px;
+              margin-top: 40px;
+              border: 1px solid #cacaca;
+              background: url("../img/brand/btn_arrow.png") 100px 50% no-repeat; }
   .brand-wrap div.story {
     padding: 100px 0 0 0;
     text-align: center; }
@@ -2108,6 +2254,7 @@ p.bjqs-caption {
           font-size: 13px;
           text-align: center;
           line-height: 26px;
+          font-weight: 600;
           color: #333;
           padding: 3px 49px 2px 38px;
           border: 1px solid #cacaca;

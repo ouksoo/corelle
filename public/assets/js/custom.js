@@ -150,6 +150,7 @@ var CORE = {
         this.realTabOperation();
         this.frequentlyAskedQuestions();
         this.productInfoShow();
+        this.skyScraper();
 
         // custom scrollbar plug
         if ($('div.video-detail div.s').length > 0) {
@@ -242,6 +243,11 @@ var CORE = {
                 $('.sliders div.info').fadeOut('fast');
             });
         });
+    },
+
+    // Skyscraper
+    skyScraper: function skyScraper() {
+        var h = $(window).height();
     }
 
     // apply AOS plugin

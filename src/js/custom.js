@@ -153,6 +153,7 @@ let CORE = {
         this.realTabOperation();
         this.frequentlyAskedQuestions();
         this.productInfoShow();
+        this.skyScraper();
 
         // custom scrollbar plug
         if($('div.video-detail div.s').length > 0) {
@@ -247,6 +248,12 @@ let CORE = {
                 $('.sliders div.info').fadeOut('fast');
             })
         });
+    },
+
+    // Skyscraper
+    skyScraper : function() {
+        let h = $(window).height();
+
     }
 }
 
