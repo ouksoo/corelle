@@ -570,22 +570,26 @@
 	div.story {
 		padding: 100px 0 0 0;
 		text-align: center; 
+		
+		div.history-title {
+			padding-bottom: 80px;
 
-		p.t1 {
-			line-height: 64px;
-			font-size: 54px; color: #000;
-			font-family: $f-m;
-			padding-bottom: 12px;
-			font-weight: 700;
+			p.t1 {
+				line-height: 64px;
+				font-size: 54px; color: #000;
+				font-family: $f-m;
+				padding-bottom: 12px;
+				font-weight: 700;
+			}
+			p.t2 {
+				line-height: 38px;
+				font-size: 26px; color: #000;
+			}
 		}
-		p.t2 {
-			line-height: 38px;
-			font-size: 26px; color: #000;
-		}
+		
 		ul.history {
 			width: 1180px;
 			margin: 0 auto;
-			padding-top: 80px;
 
 			li {
 				float: left;

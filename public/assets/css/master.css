@@ -2164,21 +2164,22 @@ p.bjqs-caption {
   .brand-wrap div.story {
     padding: 100px 0 0 0;
     text-align: center; }
-    .brand-wrap div.story p.t1 {
-      line-height: 64px;
-      font-size: 54px;
-      color: #000;
-      font-family: "Karla", sans-serif;
-      padding-bottom: 12px;
-      font-weight: 700; }
-    .brand-wrap div.story p.t2 {
-      line-height: 38px;
-      font-size: 26px;
-      color: #000; }
+    .brand-wrap div.story div.history-title {
+      padding-bottom: 80px; }
+      .brand-wrap div.story div.history-title p.t1 {
+        line-height: 64px;
+        font-size: 54px;
+        color: #000;
+        font-family: "Karla", sans-serif;
+        padding-bottom: 12px;
+        font-weight: 700; }
+      .brand-wrap div.story div.history-title p.t2 {
+        line-height: 38px;
+        font-size: 26px;
+        color: #000; }
     .brand-wrap div.story ul.history {
       width: 1180px;
-      margin: 0 auto;
-      padding-top: 80px; }
+      margin: 0 auto; }
       .brand-wrap div.story ul.history li {
         float: left;
         width: 325px;
