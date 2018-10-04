@@ -9,7 +9,7 @@ appendMainmenu += '        <li><a href="support_faq.html">Support</a></li>';
 appendMainmenu += '        <li><a href="news-list.html">News & Event</a></li>';
 appendMainmenu += '        <li><a href="#">Webzine</a></li>';
 appendMainmenu += '    </ul>';
-appendMainmenu += '    <a href="#">Online-shop <span>바로가기</span></a>';
+appendMainmenu += '    <a href="http://shop.worldkitchen.co.kr/shop/main/index.php" target="_blank">Online-shop <span>바로가기</span></a>';
 appendMainmenu += '</nav>';
 
 let appendSubmenu = '';
@@ -45,9 +45,9 @@ appendSubmenu += '          <li><a href="news-list.html">새로운 소식</a></l
 appendSubmenu += '          <li><a href="event-list.html">이벤트</a></li>';
 appendSubmenu += '      </ul>';
 appendSubmenu += '      <ul class="webzine">';
-appendSubmenu += '          <li class="s"><a href="#">테이블 텔링</a></li>';
-appendSubmenu += '          <li class="s"><a href="#">마켓스트리트뉴욕</a></li>';
-appendSubmenu += '          <li class="s"><a href="#">파이렉스의 키친놀로지</a></li>';
+appendSubmenu += '          <li class="s"><a href="http://www.worldkitchen.co.kr/tabletelling/pc/index.php?channel=4" target="_blank">테이블 텔링</a></li>';
+appendSubmenu += '          <li class="s"><a href="https://www.corellebrands.co.kr/MSNY/pc/main.html?channel=2" target="_blank">마켓스트리트뉴욕</a></li>';
+appendSubmenu += '          <li class="s"><a href="https://www.corellebrands.co.kr/pyrex/pc/main.html?channel=2" target="_blank">파이렉스의 키친놀로지</a></li>';
 appendSubmenu += '      </ul>';
 appendSubmenu += '  </div>';
 appendSubmenu += '</div>';
@@ -90,11 +90,11 @@ appendFooter += '        <li><a href="event-list.html">이벤트</a></li>';
 appendFooter += '    </ul>';
 appendFooter += '    <ul class="webzine">';
 appendFooter += '        <li class="f">Webzine</li>';
-appendFooter += '        <li class="s"><a href="#">테이블 텔링</a></li>';
-appendFooter += '        <li class="s"><a href="#">마켓스트리트뉴욕</a></li>';
-appendFooter += '        <li class="s"><a href="#">파이렉스의 키친놀로지</a></li>';
+appendFooter += '        <li class="s"><a href="http://www.worldkitchen.co.kr/tabletelling/pc/index.php?channel=4" target="_blank">테이블 텔링</a></li>';
+appendFooter += '        <li class="s"><a href="https://www.corellebrands.co.kr/MSNY/pc/main.html?channel=2" target="_blank">마켓스트리트뉴욕</a></li>';
+appendFooter += '        <li class="s"><a href="https://www.corellebrands.co.kr/pyrex/pc/main.html?channel=2" target="_blank">파이렉스의 키친놀로지</a></li>';
 appendFooter += '    </ul>';
-appendFooter += '    <a href="#">Online-shop <span>바로가기</span></a>';
+appendFooter += '    <a href="http://shop.worldkitchen.co.kr/shop/main/index.php" target="_blank">Online-shop <span>바로가기</span></a>';
 appendFooter += '</div>';
 appendFooter += '<div class="copyright">';
 appendFooter += '    <h2>Corelle Brands</h2>';
@@ -111,9 +111,9 @@ appendFooter += '        <p>이메일 : <span class="f">WKKCS@worldkichen.com</s
 appendFooter += '        <p>주소 : 코렐 브랜드 코리아 - 서울 강남구 테헤란로 98길 8 8층(KT&G 대치타워 8층)</p>';
 appendFooter += '    </div>';
 appendFooter += '    <ul class="sns">';
-appendFooter += '        <li><a href="#" class="facebook">페이스북</a></li>';
-appendFooter += '        <li><a href="#" class="insta">인스타그램</a></li>';
-appendFooter += '        <li><a href="#" class="youtube">유튜브</a></li>';
+appendFooter += '        <li><a href="https://www.facebook.com/Corellebrandskorea" target="_blank" class="facebook">페이스북</a></li>';
+appendFooter += '        <li><a href="https://www.instagram.com/Corellebrands.kr" target="_blank" class="insta">인스타그램</a></li>';
+appendFooter += '        <li><a href="https://www.youtube.com/channel/UCpsehKNlLWnBRTqOUAKikkg" target="_blank" class="youtube">유튜브</a></li>';
 appendFooter += '    </ul>';
 appendFooter += '</div>';
 
@@ -257,13 +257,13 @@ let CORE = {
     }
 }
 
-// apply AOS plugin
-AOS.init({
-    easing: 'ease-out-back',
-    duration: 1000
-}); 
-
 // after loaded execute
 window.onload = function() {
     CORE.init(); 
+
+    // apply AOS plugin
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+    }); 
 };

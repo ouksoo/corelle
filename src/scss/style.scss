@@ -79,6 +79,33 @@ div.wrapper {
         div.content {
             padding: 0 0 100px 0;
         }
+
+        div.errors {
+            height: 847px;
+            text-align: center;
+
+            p.number {
+                font-family: $f-m;
+                font-size: 50px;
+                color: #000;
+                padding: 400px 0 22px 0;
+            }
+            p.detail {
+                font-family: $f-m;
+                font-size: 16px;
+                color: #555;
+            }
+            a.sowhat {
+                display: inline-block;
+                margin-top: 30px;
+                width: 324px;
+                text-align: center;
+                border: 1px solid #cacaca;
+                font-size: 18px;
+                color: #333;
+                line-height: 47px;
+            }
+        }
     }
 }
 
@@ -208,7 +235,7 @@ header {
                 color: #000;
                 font-size: 12px; font-family: $f-m; font-weight: 600;
                 background:url('../img/icon_shop_arrow.png') 140px 50% no-repeat;
-    
+        
                 span {
                     font-family: 'NanumBrunGothic', serif;
                     font-weight: 700;
@@ -228,6 +255,8 @@ header {
                     padding: 3px 0;
                     a {
                         font-size: 14px; color: #555;
+                        letter-spacing: -1px;
+
                         &:hover {
                             text-decoration: underline;
                         }
@@ -318,6 +347,8 @@ footer {
                 }
                 a {
                     font-size: 14px; color: #555;
+                    letter-spacing: -1px;
+
                     &:hover {
                         text-decoration: underline;
                     }
