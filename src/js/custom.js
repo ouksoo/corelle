@@ -99,7 +99,7 @@ appendFooter += '</div>';
 appendFooter += '<div class="copyright">';
 appendFooter += '    <h2>Corelle Brands</h2>';
 appendFooter += '    <div class="menus">';
-appendFooter += '        <a href="#">이용약관</a><a href="#">개인정보취급방침</a><a href="#">이메일주소 수집거부</a>';
+appendFooter += '        <a href="#">이용약관</a><a href="#">이메일주소 수집거부</a>';
 appendFooter += '        <p class="f">&copy;2018 Copyright by Corelle Brands, All Rights Reserved.</p>';
 appendFooter += '    </div>';
 appendFooter += '    <div class="phone-time">';
@@ -155,12 +155,16 @@ let CORE = {
         this.productInfoShow();
         this.skyScraper();
 
-        // custom scrollbar plug
-        if($('div.video-detail div.s').length > 0) {
-            $('div.video-detail div.s').mCustomScrollbar({
-                theme : 'eoksoo'
-            });   
-        }
+        // copyright
+        $('.copyright .menus a:nth-child(1)').on('click', function(){
+            var win = window.open("term.html", "_blank", "toolbar=no,scrollbars=no,resizable=no,top=100,left=100,width=800,height=760");
+            return false;
+        });
+        $('.copyright .menus a:nth-child(2)').on('click', function(){
+            var win = window.open("email_policy.html", "_blank", "toolbar=no,scrollbars=no,resizable=no,top=100,left=100,width=800,height=760");
+            return false;
+        });
+        
     },
 
     // GNB indicator init
@@ -253,8 +257,8 @@ let CORE = {
     // Skyscraper
     skyScraper : function() {
         let h = $(window).height();
+    },
 
-    }
 }
 
 // after loaded execute
