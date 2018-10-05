@@ -852,7 +852,29 @@ a.btn-default.on {
 ***********************/
 .popup-wrap {
   width: 800px;
-  height: 760px; }
+  height: 760px;
+  padding: 40px 50px 25px 50px; }
+  .popup-wrap h2 {
+    color: #000;
+    font-size: 35px;
+    border-bottom: 1px solid #979797;
+    padding-bottom: 22px; }
+  .popup-wrap div.inner-term {
+    height: 535px;
+    overflow-y: auto;
+    padding: 20px 15px 20px 0;
+    font-size: 16px;
+    line-height: 25px;
+    color: #555; }
+  .popup-wrap a.close {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    line-height: 47px;
+    border: 1px solid #cacaca;
+    width: 324px;
+    text-align: center;
+    margin: 35px auto 0 auto; }
 
 /********************
 * custom scrollbar
