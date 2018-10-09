@@ -63,7 +63,7 @@ gulp.task('connect', function(){
     connect.server({
         root: DIR.PUB,
         livereload: true,
-		port: 3030,
+		port: 4040,
 		debug: true,
     });
 });

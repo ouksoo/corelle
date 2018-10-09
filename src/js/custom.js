@@ -2,8 +2,8 @@ let appendMainmenu = '';
 appendMainmenu += '<h1>Corelle Brands</h1>';
 appendMainmenu += '<nav>';
 appendMainmenu += '    <ul class="clearfix">';
-appendMainmenu += '        <li><a href="#">About Us</a></li>';
-appendMainmenu += '        <li><a href="#">Brands</a></li>';
+appendMainmenu += '        <li><a href="about_history.html">About Us</a></li>';
+appendMainmenu += '        <li><a href="brand_corelle.html">Brands</a></li>';
 appendMainmenu += '        <li><a href="product_corelle.html">Product</a></li>';
 appendMainmenu += '        <li><a href="support_faq.html">Support</a></li>';
 appendMainmenu += '        <li><a href="news-list.html">News & Event</a></li>';
@@ -11,25 +11,28 @@ appendMainmenu += '        <li><a href="#">Webzine</a></li>';
 appendMainmenu += '    </ul>';
 appendMainmenu += '    <a href="http://shop.worldkitchen.co.kr/shop/main/index.php" target="_blank">Online-shop <span>바로가기</span></a>';
 appendMainmenu += '</nav>';
+appendMainmenu += '<div class="skyscraper">';
+appendMainmenu += '        <a href="#" class="sky-shop">shop</a><br /><a href="#" class="sky-top">top</a>';
+appendMainmenu += '</div>';
 
 let appendSubmenu = '';
 appendSubmenu += '<div class="nav-sub clearfix">';
 appendSubmenu += '  <div class="show-submenu clearfix">';
 appendSubmenu += '      <ul>';
-appendSubmenu += '          <li><a href="#">코렐 브랜드 소개/역사</a></li>';
+appendSubmenu += '          <li><a href="about_history.html">코렐 브랜드 소개/역사</a></li>';
 appendSubmenu += '          <li><a href="about_contact.html">회사위치및 정보</a></li>';
 appendSubmenu += '          <li><a href="news-list.html">홍보영상 및 보도자료</a></li>';
 appendSubmenu += '      </ul>';
 appendSubmenu += '      <ul class="brands">';
-appendSubmenu += '          <li><a href="#">Corelle</a></li>';
+appendSubmenu += '          <li><a href="brand_corelle.html">Corelle</a></li>';
 appendSubmenu += '          <li><a href="brand_pyrex.html">Pyrex</a></li>';
-appendSubmenu += '          <li><a href="#">Vision</a></li>';
-appendSubmenu += '          <li><a href="#">Corningware</a></li>';
-appendSubmenu += '          <li><a href="#">Snapware</a></li>';
-appendSubmenu += '          <li><a href="#">Chicaco Cutlery</a></li>';
-appendSubmenu += '          <li><a href="#">Corelle cookware</a></li>';
+appendSubmenu += '          <li><a href="brand_vision.html">Vision</a></li>';
+appendSubmenu += '          <li><a href="brand_corningware.html">Corningware</a></li>';
+appendSubmenu += '          <li><a href="brand_snapware.html">Snapware</a></li>';
+appendSubmenu += '          <li><a href="brand_chicago.html">Chicaco Cutlery</a></li>';
+appendSubmenu += '          <li><a href="brand_cook.html">Corelle cookware</a></li>';
 appendSubmenu += '          <li><span class="line"></span></li>';
-appendSubmenu += '          <li><a href="#">OXO</a></li>';
+appendSubmenu += '          <li><a href="brand_oxo.html">OXO</a></li>';
 appendSubmenu += '      </ul>';
 appendSubmenu += '      <ul>';
 appendSubmenu += '          <li><a href="product_corelle.html">제품소개</a></li>';
@@ -62,15 +65,15 @@ appendFooter += '        <li><a href="news-list.html">홍보영상 및 보도자
 appendFooter += '    </ul>';
 appendFooter += '    <ul class="brands">';
 appendFooter += '        <li class="f">Brands</li>';
-appendFooter += '        <li><a href="#">Corelle</a></li>';
+appendFooter += '        <li><a href="brand_corelle.html">Corelle</a></li>';
 appendFooter += '        <li><a href="brand_pyrex.html">Pyrex</a></li>';
-appendFooter += '        <li><a href="#">Vision</a></li>';
-appendFooter += '        <li><a href="#">Corningware</a></li>';
-appendFooter += '        <li><a href="#">Snapware</a></li>';
-appendFooter += '        <li><a href="#">Chicaco Cutlery</a></li>';
-appendFooter += '        <li><a href="#">Corelle cookware</a></li>';
+appendFooter += '        <li><a href="brand_vision.html">Vision</a></li>';
+appendFooter += '        <li><a href="brand_corningware.html">Corningware</a></li>';
+appendFooter += '        <li><a href="brand_snapware.html">Snapware</a></li>';
+appendFooter += '        <li><a href="brand_chicago.html">Chicaco Cutlery</a></li>';
+appendFooter += '        <li><a href="brand_cook.html">Corelle cookware</a></li>';
 appendFooter += '        <li><span class="line"></span></li>';
-appendFooter += '        <li><a href="#">OXO</a></li>';
+appendFooter += '        <li><a href="brand_oxo.html">OXO</a></li>';
 appendFooter += '    </ul>';
 appendFooter += '    <ul>';
 appendFooter += '        <li class="f">Product</li>';
@@ -154,6 +157,7 @@ let CORE = {
         this.frequentlyAskedQuestions();
         this.productInfoShow();
         this.skyScraper();
+        this.cautionTabset();
 
         // copyright
         $('.copyright .menus a:nth-child(1)').on('click', function(){
@@ -257,6 +261,15 @@ let CORE = {
     // Skyscraper
     skyScraper : function() {
         let h = $(window).height();
+    },
+
+    // support_caution.html tabs
+    cautionTabset : function() {
+        $('.caution .tabsets a').on('click', function(){
+            let thisTab = $(this).data('tabContent');
+            $('.caution .container table').css('display','none');
+            $('.caution-content-' + thisTab).css('display','block');
+        });
     },
 
 }
