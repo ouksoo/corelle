@@ -59,7 +59,7 @@ let appendFooter = '';
 appendFooter += '<div class="sitemap clearfix">';
 appendFooter += '    <ul>';
 appendFooter += '        <li class="f">About Us</li>';
-appendFooter += '        <li><a href="#">코렐 브랜드 소개/역사</a></li>';
+appendFooter += '        <li><a href="about_history.html">코렐 브랜드 소개/역사</a></li>';
 appendFooter += '        <li><a href="about_contact.html">회사위치및 정보</a></li>';
 appendFooter += '        <li><a href="news-list.html">홍보영상 및 보도자료</a></li>';
 appendFooter += '    </ul>';
