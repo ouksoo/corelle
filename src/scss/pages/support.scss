@@ -20,6 +20,11 @@
 		p.agreement {
 			padding: 15px 0 70px 0;
 		}
+		p.warn {
+			font-size: 16px;
+			color: #ff0000;
+			padding-top: 10px;
+		}
 	}
 
 	// caution
@@ -216,6 +221,8 @@
 						&.store16 {background:url('../img/support/store_16_off.png') 0 0 no-repeat}
 						&.store17 {background:url('../img/support/store_17_off.png') 0 0 no-repeat}
 						&.store18 {background:url('../img/support/store_18_off.png') 0 0 no-repeat}
+						&.store19 {background:url('../img/support/store_19_off.png') 0 0 no-repeat}
+						&.store20 {background:url('../img/support/store_20_off.png') 0 0 no-repeat}
 
 						&:hover {
 							left: -1px; top: -1px;
@@ -240,6 +247,8 @@
 							&.store16 {background:url('../img/support/store_16_on.png') 0 0 no-repeat}
 							&.store17 {background:url('../img/support/store_17_on.png') 0 0 no-repeat}
 							&.store18 {background:url('../img/support/store_18_on.png') 0 0 no-repeat}
+							&.store19 {background:url('../img/support/store_19_on.png') 0 0 no-repeat}
+							&.store20 {background:url('../img/support/store_20_on.png') 0 0 no-repeat}
 						}
 					}
 				}

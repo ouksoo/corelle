@@ -2206,6 +2206,10 @@ p.bjqs-caption {
       margin: 15px 0; }
     .corelle-support.asking p.agreement {
       padding: 15px 0 70px 0; }
+    .corelle-support.asking p.warn {
+      font-size: 16px;
+      color: #ff0000;
+      padding-top: 10px; }
   .corelle-support.caution div.tabsets {
     padding: 17px 0 17px 0;
     text-align: center;
@@ -2368,6 +2372,10 @@ p.bjqs-caption {
           background: url("../img/support/store_17_off.png") 0 0 no-repeat; }
         .corelle-support.store div.channels ul li a.store18 {
           background: url("../img/support/store_18_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.store19 {
+          background: url("../img/support/store_19_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.store20 {
+          background: url("../img/support/store_20_off.png") 0 0 no-repeat; }
         .corelle-support.store div.channels ul li a:hover {
           left: -1px;
           top: -1px;
@@ -2409,6 +2417,10 @@ p.bjqs-caption {
             background: url("../img/support/store_17_on.png") 0 0 no-repeat; }
           .corelle-support.store div.channels ul li a:hover.store18 {
             background: url("../img/support/store_18_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.store19 {
+            background: url("../img/support/store_19_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.store20 {
+            background: url("../img/support/store_20_on.png") 0 0 no-repeat; }
 
 div.search-area {
   width: 1620px;
