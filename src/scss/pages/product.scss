@@ -94,6 +94,21 @@
 			border-top: 1px solid #8d8d8d;
 			border-bottom: 1px solid #e0e0e0;
 
+			p.product-subtitle {
+				font-size: 15px;
+				color: #555; 
+				text-align: center;
+
+				span {
+					display: block; 
+					font-family: $f-m;
+					font-size: 38px;
+					font-weight: 700;
+					color: #111;
+					line-height: 34px; padding: 26px 0 0px 0;
+				}
+			}
+
 			a.view-detail {
 				position: absolute;
 				right: 25px; top: 50px;
@@ -102,87 +117,87 @@
 				background: url('../img/icon_small_arrow_right.png') right 10% no-repeat;
 			}
 			
-			&.corelle {
-				background:url('../img/product/logo_small_corelle.png') 50% 50% no-repeat;
-			}
-			&.marketm {
-				background:url('../img/product/logo_small_marketm.png') 50% 50% no-repeat;
-			}
-			&.prepware {
-				background:url('../img/product/pyrex_name_1.png') 50% 50% no-repeat;
-			}
-			&.storage {
-				background:url('../img/product/pyrex_name_2.png') 50% 50% no-repeat;
-			}
-			&.beverage {
-				background:url('../img/product/pyrex_name_3.png') 50% 50% no-repeat;
-			}
-			&.cookware {
-				background:url('../img/product/corning_name_1.png') 50% 50% no-repeat;
-			}
-			&.popinmug {
-				background:url('../img/product/corning_name_2.png') 50% 50% no-repeat;
-			}
-			&.storage-snap {
-				background:url('../img/product/snapware_name_1.png') 50% 50% no-repeat;
-			}
-			&.prohold {
-				background:url('../img/product/chicago_name_1.png') 50% 50% no-repeat;
-			}
-			&.fullerton {
-				background:url('../img/product/chicago_name_2.png') 50% 50% no-repeat;
-			}
-			&.uptown {
-				background:url('../img/product/chicago_name_3.png') 50% 50% no-repeat;
-			}
-			&.kinzie {
-				background:url('../img/product/chicago_name_4.png') 50% 50% no-repeat;
-			}
-			&.vivid {
-				background:url('../img/product/chicago_name_5.png') 50% 50% no-repeat;
-			}
-			&.procontrol {
-				background:url('../img/product/chicago_name_6.png') 50% 50% no-repeat;
-			}
-			&.shears {
-				background:url('../img/product/chicago_name_7.png') 50% 50% no-repeat;
-			}
-			&.classic {
-				background:url('../img/product/vision_name_1.png') 50% 50% no-repeat;
-			}
-			&.flair {
-				background:url('../img/product/vision_name_2.png') 50% 50% no-repeat;
-			}
-			&.diamond {
-				background:url('../img/product/vision_name_3.png') 50% 50% no-repeat;
-			}
-			&.reverse {
-				background:url('../img/product/vision_name_4.png') 50% 50% no-repeat;
-			}
-			&.frypan {
-				background:url('../img/product/cook_name_1.png') 50% 50% no-repeat;
-			}
-			&.pot {
-				background:url('../img/product/cook_name_2.png') 50% 50% no-repeat;
-			}
-			&.oxo-preparing {
-				background:url('../img/product/oxo_name_1.png') 50% 50% no-repeat;
-			}
-			&.oxo-cooking {
-				background:url('../img/product/oxo_name_2.png') 50% 50% no-repeat;
-			}
-			&.oxo-storage {
-				background:url('../img/product/oxo_name_3.png') 50% 50% no-repeat;
-			}
-			&.oxo-beverage {
-				background:url('../img/product/oxo_name_4.png') 50% 50% no-repeat;
-			}
-			&.oxo-cleaning {
-				background:url('../img/product/oxo_name_5.png') 50% 50% no-repeat;
-			}
-			&.oxo-tot {
-				background:url('../img/product/oxo_name_6.png') 50% 50% no-repeat;
-			}
+			// &.corelle {
+			// 	background:url('../img/product/logo_small_corelle.png') 50% 50% no-repeat;
+			// }
+			// &.marketm {
+			// 	background:url('../img/product/logo_small_marketm.png') 50% 50% no-repeat;
+			// }
+			// &.prepware {
+			// 	background:url('../img/product/pyrex_name_1.png') 50% 50% no-repeat;
+			// }
+			// &.storage {
+			// 	background:url('../img/product/pyrex_name_2.png') 50% 50% no-repeat;
+			// }
+			// &.beverage {
+			// 	background:url('../img/product/pyrex_name_3.png') 50% 50% no-repeat;
+			// }
+			// &.cookware {
+			// 	background:url('../img/product/corning_name_1.png') 50% 50% no-repeat;
+			// }
+			// &.popinmug {
+			// 	background:url('../img/product/corning_name_2.png') 50% 50% no-repeat;
+			// }
+			// &.storage-snap {
+			// 	background:url('../img/product/snapware_name_1.png') 50% 50% no-repeat;
+			// }
+			// &.prohold {
+			// 	background:url('../img/product/chicago_name_1.png') 50% 50% no-repeat;
+			// }
+			// &.fullerton {
+			// 	background:url('../img/product/chicago_name_2.png') 50% 50% no-repeat;
+			// }
+			// &.uptown {
+			// 	background:url('../img/product/chicago_name_3.png') 50% 50% no-repeat;
+			// }
+			// &.kinzie {
+			// 	background:url('../img/product/chicago_name_4.png') 50% 50% no-repeat;
+			// }
+			// &.vivid {
+			// 	background:url('../img/product/chicago_name_5.png') 50% 50% no-repeat;
+			// }
+			// &.procontrol {
+			// 	background:url('../img/product/chicago_name_6.png') 50% 50% no-repeat;
+			// }
+			// &.shears {
+			// 	background:url('../img/product/chicago_name_7.png') 50% 50% no-repeat;
+			// }
+			// &.classic {
+			// 	background:url('../img/product/vision_name_1.png') 50% 50% no-repeat;
+			// }
+			// &.flair {
+			// 	background:url('../img/product/vision_name_2.png') 50% 50% no-repeat;
+			// }
+			// &.diamond {
+			// 	background:url('../img/product/vision_name_3.png') 50% 50% no-repeat;
+			// }
+			// &.reverse {
+			// 	background:url('../img/product/vision_name_4.png') 50% 50% no-repeat;
+			// }
+			// &.frypan {
+			// 	background:url('../img/product/cook_name_1.png') 50% 50% no-repeat;
+			// }
+			// &.pot {
+			// 	background:url('../img/product/cook_name_2.png') 50% 50% no-repeat;
+			// }
+			// &.oxo-preparing {
+			// 	background:url('../img/product/oxo_name_1.png') 50% 50% no-repeat;
+			// }
+			// &.oxo-cooking {
+			// 	background:url('../img/product/oxo_name_2.png') 50% 50% no-repeat;
+			// }
+			// &.oxo-storage {
+			// 	background:url('../img/product/oxo_name_3.png') 50% 50% no-repeat;
+			// }
+			// &.oxo-beverage {
+			// 	background:url('../img/product/oxo_name_4.png') 50% 50% no-repeat;
+			// }
+			// &.oxo-cleaning {
+			// 	background:url('../img/product/oxo_name_5.png') 50% 50% no-repeat;
+			// }
+			// &.oxo-tot {
+			// 	background:url('../img/product/oxo_name_6.png') 50% 50% no-repeat;
+			// }
 		}
 		p.sub-tit {
 			font-size: 16px; text-align: center;

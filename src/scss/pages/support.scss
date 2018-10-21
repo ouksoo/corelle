@@ -27,6 +27,33 @@
 		}
 	}
 
+	// asking ok
+	&.asking-ok {
+		height: 850px;
+		padding-top: 380px;
+		text-align: center;
+
+		p.ask-1 {
+			font-size: 35px;
+			color: #000;
+		}
+		p.ask-2 {
+			font-size: 16px;
+			color: #555;
+			padding: 22px 0 31px 0;
+		}
+		a.ask-gohome {
+			display: inline-block;
+			width: 324px;
+			height: 47px;
+			font-size: 18px;
+			color: #333;
+			text-align: center;
+			border: 1px solid #cacaca;
+			padding-top: 11px;
+		}
+	}
+
 	// caution
 	&.caution {
 
@@ -45,7 +72,13 @@
 					color: #333;
 					font-weight: 600;
                 }
-            }
+			}
+			
+			&.tab-pyrex {
+				font-family: $f-n;
+				background: #fafafa;
+				border-bottom: 1px solid #dadada;
+			}
 		}
 
 		.caution-table th {
@@ -71,6 +104,9 @@
 			p.table-content {
 
 			}
+			span.red {
+				color: #d0021b;
+			}
 		}
 	}
 
@@ -80,7 +116,8 @@
 		div.tabsets {
             padding: 17px 0 17px 0;
             text-align: center;
-            border-bottom: 1px solid #d0d0d0;
+			// border-bottom: 1px solid #d0d0d0;
+			border-bottom: 1px solid #636363;
 
 			&.sub-2 {
 				border-bottom: 1px solid #636363;
@@ -132,8 +169,9 @@
 					overflow: hidden;
 					font-size: 16px; color: #333;
 					background-color: #f5f5f5;
-					padding: 35px 80px 80px 80px;
+					padding: 35px 80px 80px 180px;
 					border-top: 1px solid #d5d5d5;
+					line-height: 24px;
 				}
 			}
 		}
@@ -203,52 +241,60 @@
 						text-indent: -9999px;
 						left: 0; top: 0;
 
-						&.store1 {background:url('../img/support/store_1_off.png') 0 0 no-repeat}
-						&.store2 {background:url('../img/support/store_2_off.png') 0 0 no-repeat}
-						&.store3 {background:url('../img/support/store_3_off.png') 0 0 no-repeat}
-						&.store4 {background:url('../img/support/store_4_off.png') 0 0 no-repeat}
-						&.store5 {background:url('../img/support/store_5_off.png') 0 0 no-repeat}
-						&.store6 {background:url('../img/support/store_6_off.png') 0 0 no-repeat}
-						&.store7 {background:url('../img/support/store_7_off.png') 0 0 no-repeat}
-						&.store8 {background:url('../img/support/store_8_off.png') 0 0 no-repeat}
-						&.store9 {background:url('../img/support/store_9_off.png') 0 0 no-repeat}
-						&.store10 {background:url('../img/support/store_10_off.png') 0 0 no-repeat}
-						&.store11 {background:url('../img/support/store_11_off.png') 0 0 no-repeat}
-						&.store12 {background:url('../img/support/store_12_off.png') 0 0 no-repeat}
-						&.store13 {background:url('../img/support/store_13_off.png') 0 0 no-repeat}
-						&.store14 {background:url('../img/support/store_14_off.png') 0 0 no-repeat}
-						&.store15 {background:url('../img/support/store_15_off.png') 0 0 no-repeat}
-						&.store16 {background:url('../img/support/store_16_off.png') 0 0 no-repeat}
-						&.store17 {background:url('../img/support/store_17_off.png') 0 0 no-repeat}
-						&.store18 {background:url('../img/support/store_18_off.png') 0 0 no-repeat}
-						&.store19 {background:url('../img/support/store_19_off.png') 0 0 no-repeat}
-						&.store20 {background:url('../img/support/store_20_off.png') 0 0 no-repeat}
+						&.nolink {
+							cursor: default;
+						}
+
+						&.lotte {background:url('../img/support/lotte_off.png') 0 0 no-repeat}
+						&.shinsegae {background:url('../img/support/shinsegae_off.png') 0 0 no-repeat}
+						&.hyundai {background:url('../img/support/hyundai_off.png') 0 0 no-repeat}
+						&.akplaza {background:url('../img/support/akplaza_off.png') 0 0 no-repeat}
+						&.thegalleria {background:url('../img/support/thegalleria_off.png') 0 0 no-repeat}
+						&.say {background:url('../img/support/say_off.png') 0 0 no-repeat}
+						&.emart {background:url('../img/support/emart_off.png') 0 0 no-repeat}
+						&.emarttraders {background:url('../img/support/emarttraders_off.png') 0 0 no-repeat}
+						&.homeplus {background:url('../img/support/homeplus_off.png') 0 0 no-repeat}
+						&.lottemart {background:url('../img/support/lottemart_off.png') 0 0 no-repeat}
+						&.costco {background:url('../img/support/costco_off.png') 0 0 no-repeat}
+						&.ssgcom {background:url('../img/support/ssgcom_off.png') 0 0 no-repeat}
+						&.gsshop {background:url('../img/support/gsshop_off.png') 0 0 no-repeat}
+						&.lottecom {background:url('../img/support/lottecom_off.png') 0 0 no-repeat}
+						&.hmall {background:url('../img/support/hmall_off.png') 0 0 no-repeat}
+						&.cjmall {background:url('../img/support/cjmall_off.png') 0 0 no-repeat}
+						&.lottemall {background:url('../img/support/lottemall_off.png') 0 0 no-repeat}
+						&.gmarket {background:url('../img/support/gmarket_off.png') 0 0 no-repeat}
+						&.o11st {background:url('../img/support/o11st_off.png') 0 0 no-repeat}
+						&.auction {background:url('../img/support/auction_off.png') 0 0 no-repeat}
+						&.interpark {background:url('../img/support/interpark_off.png') 0 0 no-repeat}
+
 
 						&:hover {
 							left: -1px; top: -1px;
 							border: 1px solid #000;
 							z-index: 1;
 
-							&.store1 {background:url('../img/support/store_1_on.png') 0 0 no-repeat}
-							&.store2 {background:url('../img/support/store_2_on.png') 0 0 no-repeat}
-							&.store3 {background:url('../img/support/store_3_on.png') 0 0 no-repeat}
-							&.store4 {background:url('../img/support/store_4_on.png') 0 0 no-repeat}
-							&.store5 {background:url('../img/support/store_5_on.png') 0 0 no-repeat}
-							&.store6 {background:url('../img/support/store_6_on.png') 0 0 no-repeat}
-							&.store7 {background:url('../img/support/store_7_on.png') 0 0 no-repeat}
-							&.store8 {background:url('../img/support/store_8_on.png') 0 0 no-repeat}
-							&.store9 {background:url('../img/support/store_9_on.png') 0 0 no-repeat}
-							&.store10 {background:url('../img/support/store_10_on.png') 0 0 no-repeat}
-							&.store11 {background:url('../img/support/store_11_on.png') 0 0 no-repeat}
-							&.store12 {background:url('../img/support/store_12_on.png') 0 0 no-repeat}
-							&.store13 {background:url('../img/support/store_13_on.png') 0 0 no-repeat}
-							&.store14 {background:url('../img/support/store_14_on.png') 0 0 no-repeat}
-							&.store15 {background:url('../img/support/store_15_on.png') 0 0 no-repeat}
-							&.store16 {background:url('../img/support/store_16_on.png') 0 0 no-repeat}
-							&.store17 {background:url('../img/support/store_17_on.png') 0 0 no-repeat}
-							&.store18 {background:url('../img/support/store_18_on.png') 0 0 no-repeat}
-							&.store19 {background:url('../img/support/store_19_on.png') 0 0 no-repeat}
-							&.store20 {background:url('../img/support/store_20_on.png') 0 0 no-repeat}
+							&.lotte {background:url('../img/support/lotte_on.png') 0 0 no-repeat}
+							&.shinsegae {background:url('../img/support/shinsegae_on.png') 0 0 no-repeat}
+							&.hyundai {background:url('../img/support/hyundai_on.png') 0 0 no-repeat}
+							&.akplaza {background:url('../img/support/akplaza_on.png') 0 0 no-repeat}
+							&.thegalleria {background:url('../img/support/thegalleria_on.png') 0 0 no-repeat}
+							&.say {background:url('../img/support/say_on.png') 0 0 no-repeat}
+							&.emart {background:url('../img/support/emart_on.png') 0 0 no-repeat}
+							&.emarttraders {background:url('../img/support/emarttraders_on.png') 0 0 no-repeat}
+							&.homeplus {background:url('../img/support/homeplus_on.png') 0 0 no-repeat}
+							&.lottemart {background:url('../img/support/lottemart_on.png') 0 0 no-repeat}
+							&.costco {background:url('../img/support/costco_on.png') 0 0 no-repeat}
+							&.ssgcom {background:url('../img/support/ssgcom_on.png') 0 0 no-repeat}
+							&.gsshop {background:url('../img/support/gsshop_on.png') 0 0 no-repeat}
+							&.lottecom {background:url('../img/support/lottecom_on.png') 0 0 no-repeat}
+							&.hmall {background:url('../img/support/hmall_on.png') 0 0 no-repeat}
+							&.cjmall {background:url('../img/support/cjmall_on.png') 0 0 no-repeat}
+							&.lottemall {background:url('../img/support/lottemall_on.png') 0 0 no-repeat}
+							&.gmarket {background:url('../img/support/gmarket_on.png') 0 0 no-repeat}
+							&.o11st {background:url('../img/support/o11st_on.png') 0 0 no-repeat}
+							&.auction {background:url('../img/support/auction_on.png') 0 0 no-repeat}
+							&.interpark {background:url('../img/support/interpark_on.png') 0 0 no-repeat}
+
 						}
 					}
 				}

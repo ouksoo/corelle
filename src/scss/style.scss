@@ -16,8 +16,9 @@ div.wrapper {
 
     div.skyscraper {
         position: fixed;
-        bottom: 280px;
-        margin-left: 1700px;
+        bottom: 40px;
+        right: 35px;
+        // margin-left: 1700px;
         font-size: 12px;
         font-family: $f-m;
         text-align: center;
@@ -42,7 +43,7 @@ div.wrapper {
             border: 1px solid #dbdbdb;
             -webkit-border-radius: 15px;
             border-radius: 15px;
-            background:#fff url('../img/icon_shop.png') 45px 50% no-repeat;
+            background:#fff url('../img/icon_top.png') 45px 50% no-repeat;
             color: #000;
         }
     }

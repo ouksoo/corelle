@@ -12,25 +12,25 @@ appendMainmenu += '    </ul>';
 appendMainmenu += '    <a href="http://shop.worldkitchen.co.kr/shop/main/index.php" target="_blank">Online-shop <span>바로가기</span></a>';
 appendMainmenu += '</nav>';
 appendMainmenu += '<div class="skyscraper">';
-appendMainmenu += '        <a href="#" class="sky-shop">shop</a><br /><a href="#" class="sky-top">top</a>';
+appendMainmenu += '        <a href="http://shop.worldkitchen.co.kr/shop/main/index.php" target="_blank" class="sky-shop">shop</a><br /><a href="#" class="sky-top">top</a>';
 appendMainmenu += '</div>';
 
 let appendSubmenu = '';
 appendSubmenu += '<div class="nav-sub clearfix">';
 appendSubmenu += '  <div class="show-submenu clearfix">';
 appendSubmenu += '      <ul>';
-appendSubmenu += '          <li><a href="about_history.html">코렐 브랜드 소개/역사</a></li>';
-appendSubmenu += '          <li><a href="about_contact.html">회사위치및 정보</a></li>';
-appendSubmenu += '          <li><a href="news-list.html">홍보영상 및 보도자료</a></li>';
+appendSubmenu += '          <li><a href="about_history.html">코렐 브랜드 소개</a></li>';
+appendSubmenu += '          <li><a href="about_contact.html">회사 INFO</a></li>';
+appendSubmenu += '          <li><a href="news-list.html">홍보자료</a></li>';
 appendSubmenu += '      </ul>';
 appendSubmenu += '      <ul class="brands">';
 appendSubmenu += '          <li><a href="brand_corelle.html">Corelle</a></li>';
 appendSubmenu += '          <li><a href="brand_pyrex.html">Pyrex</a></li>';
-appendSubmenu += '          <li><a href="brand_vision.html">Vision</a></li>';
 appendSubmenu += '          <li><a href="brand_corningware.html">Corningware</a></li>';
 appendSubmenu += '          <li><a href="brand_snapware.html">Snapware</a></li>';
-appendSubmenu += '          <li><a href="brand_chicago.html">Chicaco Cutlery</a></li>';
-appendSubmenu += '          <li><a href="brand_cook.html">Corelle cookware</a></li>';
+appendSubmenu += '          <li><a href="brand_chicago.html">Chicago Cutlery</a></li>';
+appendSubmenu += '          <li><a href="brand_vision.html">Visions</a></li>';
+appendSubmenu += '          <li><a href="brand_cook.html">Corelle cook</a></li>';
 appendSubmenu += '          <li><span class="line"></span></li>';
 appendSubmenu += '          <li><a href="brand_oxo.html">OXO</a></li>';
 appendSubmenu += '      </ul>';
@@ -38,9 +38,9 @@ appendSubmenu += '      <ul>';
 appendSubmenu += '          <li><a href="product_corelle.html">제품소개</a></li>';
 appendSubmenu += '      </ul>';
 appendSubmenu += '      <ul>';
-appendSubmenu += '          <li><a href="support_faq.html">자주묻는 질문</a></li>';
+appendSubmenu += '          <li><a href="support_faq.html">FAQ</a></li>';
 appendSubmenu += '          <li><a href="support_asking.html">1:1문의</a></li>';
-appendSubmenu += '          <li><a href="support_caution.html">품질보증 및 보관방법</a></li>';
+appendSubmenu += '          <li><a href="support_caution.html">사용법 및 주의사항</a></li>';
 appendSubmenu += '          <li><a href="support_store.html">매장안내</a></li>';
 appendSubmenu += '      </ul>';
 appendSubmenu += '      <ul>';
@@ -49,7 +49,7 @@ appendSubmenu += '          <li><a href="event-list.html">이벤트</a></li>';
 appendSubmenu += '      </ul>';
 appendSubmenu += '      <ul class="webzine">';
 appendSubmenu += '          <li class="s"><a href="http://www.worldkitchen.co.kr/tabletelling/pc/index.php?channel=4" target="_blank">테이블 텔링</a></li>';
-appendSubmenu += '          <li class="s"><a href="https://www.corellebrands.co.kr/MSNY/pc/main.html?channel=2" target="_blank">마켓스트리트뉴욕</a></li>';
+appendSubmenu += '          <li class="s"><a href="https://www.corellebrands.co.kr/MSNY/pc/main.html?channel=2" target="_blank">마켓스트리트 뉴욕</a></li>';
 appendSubmenu += '          <li class="s"><a href="https://www.corellebrands.co.kr/pyrex/pc/main.html?channel=2" target="_blank">파이렉스의 키친놀로지</a></li>';
 appendSubmenu += '      </ul>';
 appendSubmenu += '  </div>';
@@ -59,19 +59,19 @@ let appendFooter = '';
 appendFooter += '<div class="sitemap clearfix">';
 appendFooter += '    <ul>';
 appendFooter += '        <li class="f">About Us</li>';
-appendFooter += '        <li><a href="about_history.html">코렐 브랜드 소개/역사</a></li>';
-appendFooter += '        <li><a href="about_contact.html">회사위치및 정보</a></li>';
-appendFooter += '        <li><a href="news-list.html">홍보영상 및 보도자료</a></li>';
+appendFooter += '        <li><a href="about_history.html">코렐 브랜드 소개</a></li>';
+appendFooter += '        <li><a href="about_contact.html">회사 INFO</a></li>';
+appendFooter += '        <li><a href="news-list.html">홍보자료</a></li>';
 appendFooter += '    </ul>';
 appendFooter += '    <ul class="brands">';
 appendFooter += '        <li class="f">Brands</li>';
 appendFooter += '        <li><a href="brand_corelle.html">Corelle</a></li>';
 appendFooter += '        <li><a href="brand_pyrex.html">Pyrex</a></li>';
-appendFooter += '        <li><a href="brand_vision.html">Vision</a></li>';
 appendFooter += '        <li><a href="brand_corningware.html">Corningware</a></li>';
 appendFooter += '        <li><a href="brand_snapware.html">Snapware</a></li>';
-appendFooter += '        <li><a href="brand_chicago.html">Chicaco Cutlery</a></li>';
-appendFooter += '        <li><a href="brand_cook.html">Corelle cookware</a></li>';
+appendFooter += '        <li><a href="brand_chicago.html">Chicago Cutlery</a></li>';
+appendFooter += '        <li><a href="brand_vision.html">Visions</a></li>';
+appendFooter += '        <li><a href="brand_cook.html">Corelle cook</a></li>';
 appendFooter += '        <li><span class="line"></span></li>';
 appendFooter += '        <li><a href="brand_oxo.html">OXO</a></li>';
 appendFooter += '    </ul>';
@@ -81,9 +81,9 @@ appendFooter += '        <li><a href="product_corelle.html">제품소개</a></li
 appendFooter += '    </ul>';
 appendFooter += '    <ul>';
 appendFooter += '        <li class="f">Support</li>';
-appendFooter += '        <li><a href="support_faq.html">자주묻는 질문</a></li>';
+appendFooter += '        <li><a href="support_faq.html">FAQ</a></li>';
 appendFooter += '        <li><a href="support_asking.html">1:1문의</a></li>';
-appendFooter += '        <li><a href="support_caution.html">품질보증 및 보관방법</a></li>';
+appendFooter += '        <li><a href="support_caution.html">사용법 및 주의사항</a></li>';
 appendFooter += '        <li><a href="support_store.html">매장안내</a></li>';
 appendFooter += '    </ul>';
 appendFooter += '    <ul>';
@@ -94,7 +94,7 @@ appendFooter += '    </ul>';
 appendFooter += '    <ul class="webzine">';
 appendFooter += '        <li class="f">Webzine</li>';
 appendFooter += '        <li class="s"><a href="http://www.worldkitchen.co.kr/tabletelling/pc/index.php?channel=4" target="_blank">테이블 텔링</a></li>';
-appendFooter += '        <li class="s"><a href="https://www.corellebrands.co.kr/MSNY/pc/main.html?channel=2" target="_blank">마켓스트리트뉴욕</a></li>';
+appendFooter += '        <li class="s"><a href="https://www.corellebrands.co.kr/MSNY/pc/main.html?channel=2" target="_blank">마켓스트리트 뉴욕</a></li>';
 appendFooter += '        <li class="s"><a href="https://www.corellebrands.co.kr/pyrex/pc/main.html?channel=2" target="_blank">파이렉스의 키친놀로지</a></li>';
 appendFooter += '    </ul>';
 appendFooter += '    <a href="http://shop.worldkitchen.co.kr/shop/main/index.php" target="_blank">Online-shop <span>바로가기</span></a>';
@@ -229,6 +229,13 @@ let CORE = {
 
     // FAQ
     frequentlyAskedQuestions : function() {
+        $('.faq .tabsets a').on('click', function(){
+            let thisTab = $(this).data('tabContent');
+
+            $('.faq .container ul.questions').css('display','none');
+            $('.faq-content-' + thisTab).css('display','block');
+        });
+
         $('.questions a.question-link').on('click', function(e){
             e.preventDefault();
             if(!$(this).hasClass('on')) {
@@ -267,6 +274,14 @@ let CORE = {
     cautionTabset : function() {
         $('.caution .tabsets a').on('click', function(){
             let thisTab = $(this).data('tabContent');
+
+            if(thisTab == '2-1' || thisTab == '2-2' || thisTab == '2-3') {
+                $('.tab-pyrex').css('display','block');
+            }
+            else {
+                $('.tab-pyrex').css('display','none');
+            }
+
             $('.caution .container table').css('display','none');
             $('.caution-content-' + thisTab).css('display','block');
         });

@@ -357,8 +357,8 @@ div.wrapper {
   margin: 0 auto; }
   div.wrapper div.skyscraper {
     position: fixed;
-    bottom: 280px;
-    margin-left: 1700px;
+    bottom: 40px;
+    right: 35px;
     font-size: 12px;
     font-family: "Karla", sans-serif;
     text-align: center;
@@ -383,7 +383,7 @@ div.wrapper {
       border: 1px solid #dbdbdb;
       -webkit-border-radius: 15px;
       border-radius: 15px;
-      background: #fff url("../img/icon_shop.png") 45px 50% no-repeat;
+      background: #fff url("../img/icon_top.png") 45px 50% no-repeat;
       color: #000; }
   div.wrapper section.index-gallery div.inner-gallery {
     height: 1024px;
@@ -1292,7 +1292,7 @@ p.bjqs-caption {
       line-height: 22px;
       color: #555;
       padding: 7px 0; }
-      .corelle-about.contact div.infos div.s td a {
+      .corelle-about.contact div.infos div.s td a.qst {
         display: inline-block;
         height: 34px;
         border: 1px solid #d3d3d3;
@@ -2072,6 +2072,18 @@ p.bjqs-caption {
   height: 125px;
   border-top: 1px solid #8d8d8d;
   border-bottom: 1px solid #e0e0e0; }
+  .corelle-product div.product-category div.product-name p.product-subtitle {
+    font-size: 15px;
+    color: #555;
+    text-align: center; }
+    .corelle-product div.product-category div.product-name p.product-subtitle span {
+      display: block;
+      font-family: "Karla", sans-serif;
+      font-size: 38px;
+      font-weight: 700;
+      color: #111;
+      line-height: 34px;
+      padding: 26px 0 0px 0; }
   .corelle-product div.product-category div.product-name a.view-detail {
     position: absolute;
     right: 25px;
@@ -2081,60 +2093,6 @@ p.bjqs-caption {
     color: #555;
     padding-right: 20px;
     background: url("../img/icon_small_arrow_right.png") right 10% no-repeat; }
-  .corelle-product div.product-category div.product-name.corelle {
-    background: url("../img/product/logo_small_corelle.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.marketm {
-    background: url("../img/product/logo_small_marketm.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.prepware {
-    background: url("../img/product/pyrex_name_1.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.storage {
-    background: url("../img/product/pyrex_name_2.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.beverage {
-    background: url("../img/product/pyrex_name_3.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.cookware {
-    background: url("../img/product/corning_name_1.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.popinmug {
-    background: url("../img/product/corning_name_2.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.storage-snap {
-    background: url("../img/product/snapware_name_1.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.prohold {
-    background: url("../img/product/chicago_name_1.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.fullerton {
-    background: url("../img/product/chicago_name_2.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.uptown {
-    background: url("../img/product/chicago_name_3.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.kinzie {
-    background: url("../img/product/chicago_name_4.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.vivid {
-    background: url("../img/product/chicago_name_5.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.procontrol {
-    background: url("../img/product/chicago_name_6.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.shears {
-    background: url("../img/product/chicago_name_7.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.classic {
-    background: url("../img/product/vision_name_1.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.flair {
-    background: url("../img/product/vision_name_2.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.diamond {
-    background: url("../img/product/vision_name_3.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.reverse {
-    background: url("../img/product/vision_name_4.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.frypan {
-    background: url("../img/product/cook_name_1.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.pot {
-    background: url("../img/product/cook_name_2.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.oxo-preparing {
-    background: url("../img/product/oxo_name_1.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.oxo-cooking {
-    background: url("../img/product/oxo_name_2.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.oxo-storage {
-    background: url("../img/product/oxo_name_3.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.oxo-beverage {
-    background: url("../img/product/oxo_name_4.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.oxo-cleaning {
-    background: url("../img/product/oxo_name_5.png") 50% 50% no-repeat; }
-  .corelle-product div.product-category div.product-name.oxo-tot {
-    background: url("../img/product/oxo_name_6.png") 50% 50% no-repeat; }
 
 .corelle-product div.product-category p.sub-tit {
   font-size: 16px;
@@ -2210,6 +2168,26 @@ p.bjqs-caption {
       font-size: 16px;
       color: #ff0000;
       padding-top: 10px; }
+  .corelle-support.asking-ok {
+    height: 850px;
+    padding-top: 380px;
+    text-align: center; }
+    .corelle-support.asking-ok p.ask-1 {
+      font-size: 35px;
+      color: #000; }
+    .corelle-support.asking-ok p.ask-2 {
+      font-size: 16px;
+      color: #555;
+      padding: 22px 0 31px 0; }
+    .corelle-support.asking-ok a.ask-gohome {
+      display: inline-block;
+      width: 324px;
+      height: 47px;
+      font-size: 18px;
+      color: #333;
+      text-align: center;
+      border: 1px solid #cacaca;
+      padding-top: 11px; }
   .corelle-support.caution div.tabsets {
     padding: 17px 0 17px 0;
     text-align: center;
@@ -2223,6 +2201,10 @@ p.bjqs-caption {
       .corelle-support.caution div.tabsets a.on {
         color: #333;
         font-weight: 600; }
+    .corelle-support.caution div.tabsets.tab-pyrex {
+      font-family: "NanumBrunGothic", serif;
+      background: #fafafa;
+      border-bottom: 1px solid #dadada; }
   .corelle-support.caution .caution-table th {
     width: 130px;
     padding: 25px 0 0 0;
@@ -2239,10 +2221,12 @@ p.bjqs-caption {
     border-bottom: 1px solid #cacaca; }
     .corelle-support.caution .caution-table td span.table-title {
       font-weight: 600; }
+    .corelle-support.caution .caution-table td span.red {
+      color: #d0021b; }
   .corelle-support.faq div.tabsets {
     padding: 17px 0 17px 0;
     text-align: center;
-    border-bottom: 1px solid #d0d0d0; }
+    border-bottom: 1px solid #636363; }
     .corelle-support.faq div.tabsets.sub-2 {
       border-bottom: 1px solid #636363; }
     .corelle-support.faq div.tabsets a {
@@ -2282,8 +2266,9 @@ p.bjqs-caption {
         font-size: 16px;
         color: #333;
         background-color: #f5f5f5;
-        padding: 35px 80px 80px 80px;
-        border-top: 1px solid #d5d5d5; }
+        padding: 35px 80px 80px 180px;
+        border-top: 1px solid #d5d5d5;
+        line-height: 24px; }
   .corelle-support.faq .btn-area a.arrow-down {
     background: url("../img/icon_more_arrow.png") 200px 50% no-repeat; }
   .corelle-support.store div.tabsets {
@@ -2336,91 +2321,97 @@ p.bjqs-caption {
         text-indent: -9999px;
         left: 0;
         top: 0; }
-        .corelle-support.store div.channels ul li a.store1 {
-          background: url("../img/support/store_1_off.png") 0 0 no-repeat; }
-        .corelle-support.store div.channels ul li a.store2 {
-          background: url("../img/support/store_2_off.png") 0 0 no-repeat; }
-        .corelle-support.store div.channels ul li a.store3 {
-          background: url("../img/support/store_3_off.png") 0 0 no-repeat; }
-        .corelle-support.store div.channels ul li a.store4 {
-          background: url("../img/support/store_4_off.png") 0 0 no-repeat; }
-        .corelle-support.store div.channels ul li a.store5 {
-          background: url("../img/support/store_5_off.png") 0 0 no-repeat; }
-        .corelle-support.store div.channels ul li a.store6 {
-          background: url("../img/support/store_6_off.png") 0 0 no-repeat; }
-        .corelle-support.store div.channels ul li a.store7 {
-          background: url("../img/support/store_7_off.png") 0 0 no-repeat; }
-        .corelle-support.store div.channels ul li a.store8 {
-          background: url("../img/support/store_8_off.png") 0 0 no-repeat; }
-        .corelle-support.store div.channels ul li a.store9 {
-          background: url("../img/support/store_9_off.png") 0 0 no-repeat; }
-        .corelle-support.store div.channels ul li a.store10 {
-          background: url("../img/support/store_10_off.png") 0 0 no-repeat; }
-        .corelle-support.store div.channels ul li a.store11 {
-          background: url("../img/support/store_11_off.png") 0 0 no-repeat; }
-        .corelle-support.store div.channels ul li a.store12 {
-          background: url("../img/support/store_12_off.png") 0 0 no-repeat; }
-        .corelle-support.store div.channels ul li a.store13 {
-          background: url("../img/support/store_13_off.png") 0 0 no-repeat; }
-        .corelle-support.store div.channels ul li a.store14 {
-          background: url("../img/support/store_14_off.png") 0 0 no-repeat; }
-        .corelle-support.store div.channels ul li a.store15 {
-          background: url("../img/support/store_15_off.png") 0 0 no-repeat; }
-        .corelle-support.store div.channels ul li a.store16 {
-          background: url("../img/support/store_16_off.png") 0 0 no-repeat; }
-        .corelle-support.store div.channels ul li a.store17 {
-          background: url("../img/support/store_17_off.png") 0 0 no-repeat; }
-        .corelle-support.store div.channels ul li a.store18 {
-          background: url("../img/support/store_18_off.png") 0 0 no-repeat; }
-        .corelle-support.store div.channels ul li a.store19 {
-          background: url("../img/support/store_19_off.png") 0 0 no-repeat; }
-        .corelle-support.store div.channels ul li a.store20 {
-          background: url("../img/support/store_20_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.nolink {
+          cursor: default; }
+        .corelle-support.store div.channels ul li a.lotte {
+          background: url("../img/support/lotte_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.shinsegae {
+          background: url("../img/support/shinsegae_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.hyundai {
+          background: url("../img/support/hyundai_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.akplaza {
+          background: url("../img/support/akplaza_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.thegalleria {
+          background: url("../img/support/thegalleria_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.say {
+          background: url("../img/support/say_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.emart {
+          background: url("../img/support/emart_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.emarttraders {
+          background: url("../img/support/emarttraders_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.homeplus {
+          background: url("../img/support/homeplus_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.lottemart {
+          background: url("../img/support/lottemart_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.costco {
+          background: url("../img/support/costco_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.ssgcom {
+          background: url("../img/support/ssgcom_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.gsshop {
+          background: url("../img/support/gsshop_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.lottecom {
+          background: url("../img/support/lottecom_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.hmall {
+          background: url("../img/support/hmall_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.cjmall {
+          background: url("../img/support/cjmall_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.lottemall {
+          background: url("../img/support/lottemall_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.gmarket {
+          background: url("../img/support/gmarket_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.o11st {
+          background: url("../img/support/o11st_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.auction {
+          background: url("../img/support/auction_off.png") 0 0 no-repeat; }
+        .corelle-support.store div.channels ul li a.interpark {
+          background: url("../img/support/interpark_off.png") 0 0 no-repeat; }
         .corelle-support.store div.channels ul li a:hover {
           left: -1px;
           top: -1px;
           border: 1px solid #000;
           z-index: 1; }
-          .corelle-support.store div.channels ul li a:hover.store1 {
-            background: url("../img/support/store_1_on.png") 0 0 no-repeat; }
-          .corelle-support.store div.channels ul li a:hover.store2 {
-            background: url("../img/support/store_2_on.png") 0 0 no-repeat; }
-          .corelle-support.store div.channels ul li a:hover.store3 {
-            background: url("../img/support/store_3_on.png") 0 0 no-repeat; }
-          .corelle-support.store div.channels ul li a:hover.store4 {
-            background: url("../img/support/store_4_on.png") 0 0 no-repeat; }
-          .corelle-support.store div.channels ul li a:hover.store5 {
-            background: url("../img/support/store_5_on.png") 0 0 no-repeat; }
-          .corelle-support.store div.channels ul li a:hover.store6 {
-            background: url("../img/support/store_6_on.png") 0 0 no-repeat; }
-          .corelle-support.store div.channels ul li a:hover.store7 {
-            background: url("../img/support/store_7_on.png") 0 0 no-repeat; }
-          .corelle-support.store div.channels ul li a:hover.store8 {
-            background: url("../img/support/store_8_on.png") 0 0 no-repeat; }
-          .corelle-support.store div.channels ul li a:hover.store9 {
-            background: url("../img/support/store_9_on.png") 0 0 no-repeat; }
-          .corelle-support.store div.channels ul li a:hover.store10 {
-            background: url("../img/support/store_10_on.png") 0 0 no-repeat; }
-          .corelle-support.store div.channels ul li a:hover.store11 {
-            background: url("../img/support/store_11_on.png") 0 0 no-repeat; }
-          .corelle-support.store div.channels ul li a:hover.store12 {
-            background: url("../img/support/store_12_on.png") 0 0 no-repeat; }
-          .corelle-support.store div.channels ul li a:hover.store13 {
-            background: url("../img/support/store_13_on.png") 0 0 no-repeat; }
-          .corelle-support.store div.channels ul li a:hover.store14 {
-            background: url("../img/support/store_14_on.png") 0 0 no-repeat; }
-          .corelle-support.store div.channels ul li a:hover.store15 {
-            background: url("../img/support/store_15_on.png") 0 0 no-repeat; }
-          .corelle-support.store div.channels ul li a:hover.store16 {
-            background: url("../img/support/store_16_on.png") 0 0 no-repeat; }
-          .corelle-support.store div.channels ul li a:hover.store17 {
-            background: url("../img/support/store_17_on.png") 0 0 no-repeat; }
-          .corelle-support.store div.channels ul li a:hover.store18 {
-            background: url("../img/support/store_18_on.png") 0 0 no-repeat; }
-          .corelle-support.store div.channels ul li a:hover.store19 {
-            background: url("../img/support/store_19_on.png") 0 0 no-repeat; }
-          .corelle-support.store div.channels ul li a:hover.store20 {
-            background: url("../img/support/store_20_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.lotte {
+            background: url("../img/support/lotte_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.shinsegae {
+            background: url("../img/support/shinsegae_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.hyundai {
+            background: url("../img/support/hyundai_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.akplaza {
+            background: url("../img/support/akplaza_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.thegalleria {
+            background: url("../img/support/thegalleria_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.say {
+            background: url("../img/support/say_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.emart {
+            background: url("../img/support/emart_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.emarttraders {
+            background: url("../img/support/emarttraders_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.homeplus {
+            background: url("../img/support/homeplus_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.lottemart {
+            background: url("../img/support/lottemart_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.costco {
+            background: url("../img/support/costco_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.ssgcom {
+            background: url("../img/support/ssgcom_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.gsshop {
+            background: url("../img/support/gsshop_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.lottecom {
+            background: url("../img/support/lottecom_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.hmall {
+            background: url("../img/support/hmall_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.cjmall {
+            background: url("../img/support/cjmall_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.lottemall {
+            background: url("../img/support/lottemall_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.gmarket {
+            background: url("../img/support/gmarket_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.o11st {
+            background: url("../img/support/o11st_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.auction {
+            background: url("../img/support/auction_on.png") 0 0 no-repeat; }
+          .corelle-support.store div.channels ul li a:hover.interpark {
+            background: url("../img/support/interpark_on.png") 0 0 no-repeat; }
 
 div.search-area {
   width: 1620px;
