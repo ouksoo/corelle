@@ -20,25 +20,34 @@
     <section class="index-gallery" style="margin-bottom: 60px">
         <div class="inner-gallery">
             <div class="index-in">
-                <p class="slogans" style="left: 50%; top: 50%; margin: -10px 0 0 -176px;"><span class="a">CORELLE BRANDS</span><span class="b">코렐과 함께하는 건강하고 스타일리쉬한 라이프스타일</span></p>
+                <!-- <p class="slogans" style="left: 50%; top: 50%; margin: -10px 0 0 -176px;"><span class="a">CORELLE BRANDS</span><span class="b">코렐과 함께하는 건강하고 스타일리쉬한 라이프스타일</span></p> -->
                 <!-- <img src="assets/img/img_main_2.png" title=""> -->
                 <!-- <video width="1600" id="videos" height="928" autoplay muted loop>
                     <source src="assets/img/video/video_test.webm" type="video/webm">
                     <source src="assets/img/video/video_test.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video> -->
-                <video width="1600" height="928" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
-                    <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
-                    <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
-                    <!-- <source src="http://localhost:4040/assets/img/video/video_test.webm" type="video/webm">
-                    <source src="http://localhost:4040/assets/img/video/video_test.mp4" type="video/mp4"> -->
+                <video width="1680" height="928" poster="" id="bgvid" playsinline autoplay muted loop>
+                    <!-- <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+                    <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4"> -->
+                    <source src="assets/img/video/corelle_movie.webm" type="video/webm">
+                    <source src="assets/img/video/corelle_movie.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="index-in" style="display:none">
-                <p class="slogans" style="left: 50%; top: 50%; margin: -10px 0 0 -123px;"><span class="a">SILVER BIJOU</span><span class="b">화려하면서도 우아한 디너 파티</span></p>
+                <!-- <p class="slogans" style="left: 50%; top: 50%; margin: -10px 0 0 -123px;"><span class="a">SILVER BIJOU</span><span class="b">화려하면서도 우아한 디너 파티</span></p> -->
                 <img src="assets/img/img_main_1.png" title="">
             </div>
+            <div class="index-in" style="display:none">
+                <!-- <p class="slogans" style="left: 50%; top: 50%; margin: -10px 0 0 -123px;"><span class="a">SILVER BIJOU</span><span class="b">화려하면서도 우아한 디너 파티</span></p> -->
+                <img src="assets/img/img_main_2.png" title="">
+            </div>
+            <div class="index-in" style="display:none">
+                <!-- <p class="slogans" style="left: 50%; top: 50%; margin: -10px 0 0 -123px;"><span class="a">SILVER BIJOU</span><span class="b">화려하면서도 우아한 디너 파티</span></p> -->
+                <img src="assets/img/img_main_3.png" title="">
+            </div>
         </div>
+        <a href="#" class="sound">소리</a>
     </section>
 
     <!-- footer -->
@@ -53,7 +62,6 @@
 <script>
 $(document).ready(function(){
     $('.inner-gallery').bxSlider({
-        speed: 200,
         mode: 'fade',
         pager: true,
         touchEnabled: false,
@@ -70,6 +78,7 @@ $(document).ready(function(){
     });
 
     document.getElementById('bgvid').play();
+    document.getElementsByTagName('video')[0].volume = 0.5;
 });
 </script>
 <script src="assets/js/custom.js"></script>

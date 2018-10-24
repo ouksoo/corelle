@@ -374,13 +374,23 @@ ul.bxslider {
   line-height: 0; }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
-.bx-wrapper .bx-prev {
+.bx-wrapper-bx-prev {
   left: 10px;
-  background: url("../img/slide_left.png") no-repeat 0 0; }
+  width: 52px !important;
+  height: 52px !important;
+  background-image: url("../img/slide_left.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0 0 !important;
+  background-size: 52px 52px !important; }
 
-.bx-wrapper .bx-next {
+.bx-wrapper-bx-next {
   right: 10px;
-  background: url("../img/slide_right.png") no-repeat 0 0; }
+  width: 52px !important;
+  height: 52px !important;
+  background-image: url("../img/slide_right.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 0 0 !important;
+  background-size: 52px 52px !important; }
 
 .index-gallery .bx-wrapper .bx-prev {
   left: 45px;
@@ -403,8 +413,8 @@ ul.bxslider {
   top: 50%;
   margin-top: -26px;
   outline: 0;
-  width: 52px;
-  height: 52px;
+  width: 58px;
+  height: 58px;
   text-indent: -9999px;
   z-index: 9999; }
 
@@ -419,6 +429,9 @@ ul.bxslider {
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
   right: 0;
   width: 35px; }
+
+.swiper-pagination-fraction {
+  padding-bottom: 15px !important; }
 
 /********************** 
 * val
@@ -461,9 +474,22 @@ div.wrapper {
       border-radius: 15px;
       background: #fff url("../img/icon_top.png") 45px 50% no-repeat;
       color: #000; }
-  div.wrapper section.index-gallery div.inner-gallery {
-    height: 1024px;
-    margin-bottom: 20px; }
+  div.wrapper section.index-gallery {
+    position: relative; }
+    div.wrapper section.index-gallery a.sound {
+      position: absolute;
+      right: 48px;
+      bottom: 21px;
+      width: 48px;
+      height: 48px;
+      z-index: 10;
+      text-indent: -9999px;
+      background: url("../img/icon_speaker.png") 50% 50% no-repeat; }
+      div.wrapper section.index-gallery a.sound.off {
+        background: url("../img/icon_mute.png") 50% 50% no-repeat; }
+    div.wrapper section.index-gallery div.inner-gallery {
+      height: 1024px;
+      margin-bottom: 20px; }
   div.wrapper section div.main-title {
     width: 1080px;
     margin: 0 auto;
@@ -1433,7 +1459,8 @@ p.bjqs-caption {
       overflow: auto;
       font-size: 16px;
       color: #666;
-      line-height: 24px; }
+      line-height: 24px;
+      padding-left: 30px; }
   .corelle-about.video-press .container div.video-list {
     position: relative;
     margin-top: 40px;
@@ -1465,7 +1492,8 @@ p.bjqs-caption {
           padding-top: 12px;
           text-align: center;
           font-size: 16px;
-          color: #333; }
+          color: #333;
+          word-break: keep-all; }
     .corelle-about.video-press .container div.video-list a.arrow {
       position: absolute;
       width: 17px;
@@ -2180,6 +2208,7 @@ p.bjqs-caption {
       position: relative;
       float: left;
       width: 224px;
+      height: 276px;
       margin: 0 30px 25px 30px; }
       .corelle-product div.product-category div.sliders div.slider-inner ul li div.info {
         display: none;
@@ -2501,7 +2530,7 @@ div.search-area {
       div.search-area div.search-left div.search-form input {
         border: 0;
         width: 280px;
-        line-height: 36px;
+        height: 36px;
         margin: 5px 0 0 15px;
         color: #888;
         font-size: 16px; }
