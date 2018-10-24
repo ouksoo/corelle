@@ -57,6 +57,48 @@ strong, b {font-weight:normal;}
 
 input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}
 
+.board-default {
+    summary { display:inherit}
+    /* link */
+    a {}
+    a:hover {}
+    a:link {text-decoration:inherit}
+    a:visited {text-decoration:inherit}
+    a:active {text-decoration:inherit}
+
+    /* image */
+    img {border:inherit; vertical-align:top}
+
+    /* define */
+    dl, dt, dd {margin:inherit; padding:inherit;}
+
+    /* sentence */
+    div, h2 {padding:inherit; margin:inherit;}
+    p {margin:inherit; padding:inherit;}
+
+    /* list */
+    ul {list-style-type:inherit; margin:inherit; padding:inherit; }
+    ol {padding-left:inherit;}
+
+    /* area */
+    hr {display:inherit}
+
+    /* form */
+    form {margin:inherit; padding:inherit;}
+    form label, label {height:inherit; color:inherit; cursor:inherit; font-size:inherit;}
+    select {font-size:inherit; background:inherit; vertical-align:inherit; height:inherit; letter-spacing:inherit;}
+    legend {display:inherit;}
+    fieldset {margin:inherit; padding:inherit; border:inherit;}
+
+    /* table */
+    table {margin:inherit; padding:inherit; border-spacing:inherit;}
+    td {margin:inherit; padding:inherit; font-size:inherit; color:inherit;}
+    th {font-weight:inherit;}
+    /* h */
+    h1, h2, h3, h4, h5, h6, h7 { margin:inherit; padding:inherit;  font-weight:inherit;}
+    strong, b {font-weight:bold;}
+}
+
 /* margin */
 
 /* padding */
@@ -178,19 +220,19 @@ ul.bxslider {list-style: none;}
 
 .index-gallery .bx-wrapper .bx-prev {
 left: 45px;
-background: url('../img/main_slide_left_off.png') no-repeat 0 0;
+background: url('../img/main_slide_left_off.png') no-repeat 50% 50%;
 }
 .index-gallery .bx-wrapper .bx-next {
 right: 45px;
-background: url('../img/main_slide_right_off.png') no-repeat 0 0;
+background: url('../img/main_slide_right_off.png') no-repeat 50% 50%;
 }
 .index-gallery .bx-wrapper .bx-prev:hover {
 left: 45px;
-background: url('../img/main_slide_left_on.png') no-repeat 0 0;
+background: url('../img/main_slide_left_on.png') no-repeat 50% 50%;
 }
 .index-gallery .bx-wrapper .bx-next:hover {
 right: 45px;
-background: url('../img/main_slide_right_on.png') no-repeat 0 0;
+background: url('../img/main_slide_right_on.png') no-repeat 50% 50%;
 }
 
 .bx-wrapper .bx-controls-direction a {

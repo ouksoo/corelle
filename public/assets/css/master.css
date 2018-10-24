@@ -142,6 +142,82 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   -webkit-appearance: none;
   margin: 0; }
 
+.board-default {
+  /* link */
+  /* image */
+  /* define */
+  /* sentence */
+  /* list */
+  /* area */
+  /* form */
+  /* table */
+  /* h */ }
+  .board-default summary {
+    display: inherit; }
+  .board-default a:link {
+    text-decoration: inherit; }
+  .board-default a:visited {
+    text-decoration: inherit; }
+  .board-default a:active {
+    text-decoration: inherit; }
+  .board-default img {
+    border: inherit;
+    vertical-align: top; }
+  .board-default dl, .board-default dt, .board-default dd {
+    margin: inherit;
+    padding: inherit; }
+  .board-default div, .board-default h2 {
+    padding: inherit;
+    margin: inherit; }
+  .board-default p {
+    margin: inherit;
+    padding: inherit; }
+  .board-default ul {
+    list-style-type: inherit;
+    margin: inherit;
+    padding: inherit; }
+  .board-default ol {
+    padding-left: inherit; }
+  .board-default hr {
+    display: inherit; }
+  .board-default form {
+    margin: inherit;
+    padding: inherit; }
+  .board-default form label, .board-default label {
+    height: inherit;
+    color: inherit;
+    cursor: inherit;
+    font-size: inherit; }
+  .board-default select {
+    font-size: inherit;
+    background: inherit;
+    vertical-align: inherit;
+    height: inherit;
+    letter-spacing: inherit; }
+  .board-default legend {
+    display: inherit; }
+  .board-default fieldset {
+    margin: inherit;
+    padding: inherit;
+    border: inherit; }
+  .board-default table {
+    margin: inherit;
+    padding: inherit;
+    border-spacing: inherit; }
+  .board-default td {
+    margin: inherit;
+    padding: inherit;
+    font-size: inherit;
+    color: inherit; }
+  .board-default th {
+    font-weight: inherit; }
+  .board-default h1, .board-default h2, .board-default h3, .board-default h4, .board-default h5, .board-default h6, .board-default h7 {
+    margin: inherit;
+    padding: inherit;
+    font-weight: inherit; }
+  .board-default strong, .board-default b {
+    font-weight: bold; }
+
 /* margin */
 /* padding */
 .pdt-0 {
@@ -308,19 +384,19 @@ ul.bxslider {
 
 .index-gallery .bx-wrapper .bx-prev {
   left: 45px;
-  background: url("../img/main_slide_left_off.png") no-repeat 0 0; }
+  background: url("../img/main_slide_left_off.png") no-repeat 50% 50%; }
 
 .index-gallery .bx-wrapper .bx-next {
   right: 45px;
-  background: url("../img/main_slide_right_off.png") no-repeat 0 0; }
+  background: url("../img/main_slide_right_off.png") no-repeat 50% 50%; }
 
 .index-gallery .bx-wrapper .bx-prev:hover {
   left: 45px;
-  background: url("../img/main_slide_left_on.png") no-repeat 0 0; }
+  background: url("../img/main_slide_left_on.png") no-repeat 50% 50%; }
 
 .index-gallery .bx-wrapper .bx-next:hover {
   right: 45px;
-  background: url("../img/main_slide_right_on.png") no-repeat 0 0; }
+  background: url("../img/main_slide_right_on.png") no-repeat 50% 50%; }
 
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
@@ -357,7 +433,7 @@ div.wrapper {
   margin: 0 auto; }
   div.wrapper div.skyscraper {
     position: fixed;
-    bottom: 40px;
+    bottom: 145px;
     right: 35px;
     font-size: 12px;
     font-family: "Karla", sans-serif;
@@ -451,7 +527,7 @@ header {
   min-width: 1500px;
   height: 94px;
   background: rgba(255, 255, 255, 0.9);
-  z-index: 3; }
+  z-index: 100; }
   header.on {
     background: white; }
   header h1 {
@@ -506,23 +582,7 @@ header {
     header nav > a {
       position: absolute;
       right: 28px;
-      top: 33px;
-      width: 164px;
-      height: 31px;
-      padding-top: 7px;
-      padding-right: 20px;
-      text-align: center;
-      border: solid 1px #dbdbdb;
-      -webkit-border-radius: 15px;
-      border-radius: 15px;
-      color: #000;
-      font-size: 12px;
-      font-family: "Karla", sans-serif;
-      font-weight: 600;
-      background: url("../img/icon_shop_arrow.png") 140px 50% no-repeat; }
-      header nav > a span {
-        font-family: 'NanumBrunGothic', serif;
-        font-weight: 700; }
+      top: 33px; }
   header div.nav-sub {
     display: none;
     position: absolute;
@@ -612,23 +672,7 @@ footer {
     footer .sitemap > a {
       position: absolute;
       right: 28px;
-      top: 33px;
-      width: 164px;
-      height: 31px;
-      padding-top: 7px;
-      padding-right: 20px;
-      text-align: center;
-      border: solid 1px #dbdbdb;
-      -webkit-border-radius: 15px;
-      border-radius: 15px;
-      color: #000;
-      font-size: 12px;
-      font-family: "Karla", sans-serif;
-      font-weight: 600;
-      background: url("../img/icon_shop_arrow.png") 140px 50% no-repeat; }
-      footer .sitemap > a span {
-        font-family: 'NanumBrunGothic', serif;
-        font-weight: 700; }
+      top: 33px; }
     footer .sitemap ul {
       float: left;
       width: 160px; }
@@ -1302,8 +1346,32 @@ p.bjqs-caption {
         background: url("../img/about/contact_arrow.png") 88% 48% no-repeat; }
 
 .corelle-about.contact div.map-area {
+  position: relative;
   height: 550px;
   background: #f5f5f5; }
+  .corelle-about.contact div.map-area div.store-info {
+    position: absolute;
+    z-index: 5;
+    left: 20px;
+    top: 20px;
+    width: 300px;
+    height: 140px;
+    background: #2f2f2f;
+    padding: 15px 28px;
+    color: #fff; }
+    .corelle-about.contact div.map-area div.store-info p.store-name {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 35px; }
+    .corelle-about.contact div.map-area div.store-info p.store-address {
+      font-size: 13px;
+      padding-bottom: 13px; }
+    .corelle-about.contact div.map-area div.store-info span.store-phone {
+      display: block;
+      padding-top: 10px;
+      font-size: 16px;
+      font-family: "Karla", sans-serif;
+      font-weight: 600; }
 
 .corelle-about.video-press {
   width: 1080px;
@@ -1372,7 +1440,7 @@ p.bjqs-caption {
     height: 175px; }
     .corelle-about.video-press .container div.video-list div.slide-wrap {
       width: 1080px;
-      height: 210px;
+      height: 235px;
       overflow: hidden; }
       .corelle-about.video-press .container div.video-list div.slide-wrap ul li {
         position: relative;
@@ -2147,6 +2215,8 @@ p.bjqs-caption {
         .corelle-product div.product-category div.sliders div.slider-inner ul li p.what-p span.eng {
           font-family: "Karla", sans-serif;
           font-weight: 700; }
+        .corelle-product div.product-category div.sliders div.slider-inner ul li p.what-p span.kor {
+          font-size: 15px; }
 
 .corelle-support {
   width: 1080px;

@@ -428,8 +428,34 @@
 		}
 
 		div.map-area {
+			position: relative;
 			height: 550px;
 			background: #f5f5f5;
+
+			div.store-info {
+				position: absolute;
+				z-index: 5;
+				left: 20px; top: 20px;
+				width: 300px; height: 140px;
+				background: #2f2f2f;
+				padding: 15px 28px;
+				color: #fff;
+	
+				p.store-name {
+					font-weight: 600; font-size: 18px; line-height: 35px;
+				}
+				p.store-address {
+					font-size: 13px;
+					padding-bottom: 13px;
+				}
+				span.store-phone {
+					display: block; 
+					padding-top: 10px;
+					font-size: 16px;
+					font-family: $f-m;
+					font-weight: 600;
+				}
+			}
 		}
 	}
 
@@ -516,7 +542,7 @@
 
 				div.slide-wrap {
 					width: 1080px;
-					height: 210px;
+					height: 235px;
 					overflow: hidden; 
 
 					ul {

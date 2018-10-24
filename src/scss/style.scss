@@ -16,7 +16,7 @@ div.wrapper {
 
     div.skyscraper {
         position: fixed;
-        bottom: 40px;
+        bottom: 145px;
         right: 35px;
         // margin-left: 1700px;
         font-size: 12px;
@@ -136,7 +136,7 @@ header {
     width: 100%; max-width: 1680px; min-width:1500px; 
     height: 94px; 
     background: rgba(255,255,255,0.9);
-    z-index: 3;
+    z-index: 100;
 
     &.on {
         background: rgba(255,255,255,1);
@@ -196,19 +196,19 @@ header {
         & > a {
             position: absolute;
             right: 28px; top: 33px;
-            width: 164px; height: 31px;
-            padding-top: 7px; padding-right:20px; text-align: center;
-            border: solid 1px #dbdbdb;
-            -webkit-border-radius: 15px;
-                    border-radius: 15px;
-            color: #000;
-            font-size: 12px; font-family: $f-m; font-weight: 600;
-            background:url('../img/icon_shop_arrow.png') 140px 50% no-repeat;
+            // width: 164px; height: 31px;
+            // padding-top: 7px; padding-right:20px; text-align: center;
+            // border: solid 1px #dbdbdb;
+            // -webkit-border-radius: 15px;
+            //         border-radius: 15px;
+            // color: #000;
+            // font-size: 12px; font-family: $f-m; font-weight: 600;
+            // background:url('../img/icon_shop_arrow.png') 140px 50% no-repeat;
 
-            span {
-                font-family: 'NanumBrunGothic', serif;
-                font-weight: 700;
-            }
+            // span {
+            //     font-family: 'NanumBrunGothic', serif;
+            //     font-weight: 700;
+            // }
         }
     }
 
@@ -323,19 +323,19 @@ footer {
         & > a {
             position: absolute;
             right: 28px; top: 33px;
-            width: 164px; height: 31px;
-            padding-top: 7px; padding-right:20px; text-align: center;
-            border: solid 1px #dbdbdb;
-            -webkit-border-radius: 15px;
-                    border-radius: 15px;
-            color: #000;
-            font-size: 12px; font-family: $f-m; font-weight: 600;
-            background:url('../img/icon_shop_arrow.png') 140px 50% no-repeat;
+            // width: 164px; height: 31px;
+            // padding-top: 7px; padding-right:20px; text-align: center;
+            // border: solid 1px #dbdbdb;
+            // -webkit-border-radius: 15px;
+            //         border-radius: 15px;
+            // color: #000;
+            // font-size: 12px; font-family: $f-m; font-weight: 600;
+            // background:url('../img/icon_shop_arrow.png') 140px 50% no-repeat;
 
-            span {
-                font-family: 'NanumBrunGothic', serif;
-                font-weight: 700;
-            }
+            // span {
+            //     font-family: 'NanumBrunGothic', serif;
+            //     font-weight: 700;
+            // }
         }
         ul {
             float: left;

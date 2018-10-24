@@ -11,7 +11,7 @@ appendMainmenu += '        <li><a href="support_faq.html">Support</a></li>';
 appendMainmenu += '        <li><a href="news-list.html">News & Event</a></li>';
 appendMainmenu += '        <li><a href="#">Webzine</a></li>';
 appendMainmenu += '    </ul>';
-appendMainmenu += '    <a href="http://shop.worldkitchen.co.kr/shop/main/index.php" target="_blank">Online-shop <span>바로가기</span></a>';
+appendMainmenu += '    <a href="http://shop.worldkitchen.co.kr/shop/main/index.php" target="_blank"><img src="assets/img/btn_goshop.png" alt="" /></a>';
 appendMainmenu += '</nav>';
 appendMainmenu += '<div class="skyscraper">';
 appendMainmenu += '        <a href="http://shop.worldkitchen.co.kr/shop/main/index.php" target="_blank" class="sky-shop">shop</a><br /><a href="#" class="sky-top">top</a>';
@@ -99,7 +99,7 @@ appendFooter += '        <li class="s"><a href="http://www.worldkitchen.co.kr/ta
 appendFooter += '        <li class="s"><a href="https://www.corellebrands.co.kr/MSNY/pc/main.html?channel=2" target="_blank">마켓스트리트 뉴욕</a></li>';
 appendFooter += '        <li class="s"><a href="https://www.corellebrands.co.kr/pyrex/pc/main.html?channel=2" target="_blank">파이렉스의 키친놀로지</a></li>';
 appendFooter += '    </ul>';
-appendFooter += '    <a href="http://shop.worldkitchen.co.kr/shop/main/index.php" target="_blank">Online-shop <span>바로가기</span></a>';
+appendFooter += '    <a href="http://shop.worldkitchen.co.kr/shop/main/index.php" target="_blank"><img src="assets/img/btn_goshop.png" alt="" /></a>';
 appendFooter += '</div>';
 appendFooter += '<div class="copyright">';
 appendFooter += '    <h2>Corelle Brands</h2>';
@@ -237,9 +237,14 @@ var CORE = {
             if (!$(this).hasClass('on')) {
                 $('.questions div.answer').slideUp(300);
             }
-            $('.questions a.question-link').removeClass('on');
-            $(this).addClass('on');
-            $(this).next('.answer').slideDown(300);
+            if ($(this).hasClass('on')) {
+                $('.questions div.answer').slideUp(300);
+                $('.questions a.question-link').removeClass('on');
+            } else {
+                $('.questions a.question-link').removeClass('on');
+                $(this).addClass('on');
+                $(this).next('.answer').slideDown(300);
+            }
         });
     },
 
