@@ -482,7 +482,7 @@ div.wrapper {
       bottom: 21px;
       width: 48px;
       height: 48px;
-      z-index: 10;
+      z-index: 50;
       text-indent: -9999px;
       background: url("../img/icon_speaker.png") 50% 50% no-repeat; }
       div.wrapper section.index-gallery a.sound.off {
@@ -1474,7 +1474,6 @@ p.bjqs-caption {
         float: left;
         width: 254px;
         height: 175px;
-        margin-right: 21px;
         background: #666; }
         .corelle-about.video-press .container div.video-list div.slide-wrap ul li:last-child {
           margin-right: 0; }
@@ -2238,14 +2237,13 @@ p.bjqs-caption {
             background-position: 165px 48%; }
       .corelle-product div.product-category div.sliders div.slider-inner ul li p.what-p {
         text-align: center;
-        font-size: 16px;
+        font-size: 18px;
         color: #444;
         padding-top: 12px; }
         .corelle-product div.product-category div.sliders div.slider-inner ul li p.what-p span.eng {
-          font-family: "Karla", sans-serif;
-          font-weight: 700; }
+          font-family: "Karla", sans-serif; }
         .corelle-product div.product-category div.sliders div.slider-inner ul li p.what-p span.kor {
-          font-size: 15px; }
+          font-size: 14px; }
 
 .corelle-support {
   width: 1080px;
